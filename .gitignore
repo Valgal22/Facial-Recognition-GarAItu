@@ -3,3 +3,7 @@
 !preprocess_and_train.ipynb
 !app.ipynb
 !test_api.py
+!patch_app_heuristic.py
+!patch_training.py
+!*.py
+!nodeRED.json

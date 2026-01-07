@@ -1,0 +1,113 @@
+[
+    {
+        "id": "tab1",
+        "type": "tab",
+        "label": "Face Recognition Flow",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "http_in_node",
+        "type": "http in",
+        "z": "tab1",
+        "name": "POST /api/recognize",
+        "url": "/api/recognize",
+        "method": "post",
+        "upload": true,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 120,
+        "wires": [
+            [
+                "prepare_request"
+            ]
+        ]
+    },
+    {
+        "id": "prepare_request",
+        "type": "function",
+        "z": "tab1",
+        "name": "Auth & Params",
+        "func": "// 1. Authentication\nif (!msg.req.headers['x-session-id']) {\n    msg.payload = { error: \"Unauthorized: Missing XsessionID header\" };\n    msg.statusCode = 401;\n    return [null, msg]; // Send to second output (error)\n}\n\n// 2. Extract Group ID\nvar group_id = msg.req.query.group_id || \"default\";\n\n// 3. Prepare Payload for Flask\nif (msg.req.files && msg.req.files.length > 0) {\n    var file = msg.req.files[0];\n    msg.payload = {\n        \"image\": {\n            \"value\": file.buffer,\n            \"options\": {\n                \"filename\": file.originalname,\n                \"contentType\": file.mimetype\n            }\n        }\n    };\n    msg.headers = {};\n    msg.headers['content-type'] = 'multipart/form-data';\n    \n    // Pass group_id as query param to Flask\n    msg.url = \"http://localhost:5000/detect?group_id=\" + group_id;\n} else {\n    msg.payload = {};\n}\n\nreturn [msg, null]; // Send to first output (success)",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 120,
+        "wires": [
+            [
+                "http_request_flask"
+            ],
+            [
+                "http_response_node"
+            ]
+        ]
+    },
+    {
+        "id": "http_request_flask",
+        "type": "http request",
+        "z": "tab1",
+        "name": "Request Flask",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 600,
+        "y": 120,
+        "wires": [
+            [
+                "http_response_node"
+            ]
+        ]
+    },
+    {
+        "id": "http_response_node",
+        "type": "http response",
+        "z": "tab1",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 800,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "catch_node",
+        "type": "catch",
+        "z": "tab1",
+        "name": "Catch All",
+        "scope": null,
+        "uncaught": false,
+        "x": 400,
+        "y": 240,
+        "wires": [
+            [
+                "error_handler"
+            ]
+        ]
+    },
+    {
+        "id": "error_handler",
+        "type": "function",
+        "z": "tab1",
+        "name": "Format Error",
+        "func": "msg.payload = { error: msg.error ? msg.error.message : 'Unknown error' };\nmsg.statusCode = 500;\nreturn msg;",
+        "outputs": 1,
+        "x": 600,
+        "y": 240,
+        "wires": [
+            [
+                "http_response_node"
+            ]
+        ]
+    }
+]

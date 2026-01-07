@@ -2,7 +2,7 @@ import requests
 import os
 
 # Asegúrate de que existe una imagen de prueba
-image_path = "foto8.jpg"
+image_path = "foto3.jpg"
 
 if not os.path.exists(image_path):
     print(f"Error: No se encuentra {image_path}")
