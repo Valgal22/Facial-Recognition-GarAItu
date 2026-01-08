@@ -7,3 +7,5 @@
 !patch_training.py
 !*.py
 !nodeRED.json
+!face_server/
+!face_server/*
