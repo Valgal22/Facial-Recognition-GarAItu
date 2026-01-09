@@ -10,23 +10,21 @@ def recognize_primary_face(image):
     # --- OPTIMIZATION: Resize if too big ---
     # RetinaFace on CPU is slow on large images. 
     # Resizing to max 640px speeds it up significantly (~5x-10x).
-    print("DEBUG: recognize_primary_face entered")
+    # --- OPTIMIZATION: Resize if too big ---
+    # RetinaFace on CPU is slow on large images. 
+    # Resizing to max 640px speeds it up significantly (~5x-10x).
     h, w = image.shape[:2]
     max_dim = 640
     scale = 1.0
 
     if max(h, w) > max_dim:
-        print(f"DEBUG: Resizing image from {w}x{h}...")
         import cv2
         scale = max_dim / float(max(h, w))
         new_w, new_h = int(w * scale), int(h * scale)
         image = cv2.resize(image, (new_w, new_h))
-        print(f"DEBUG: Resized to {new_w}x{new_h}")
 
     try:
-        print("DEBUG: Starting detector.detect...")
         faces = detector.detect(image)
-        print(f"DEBUG: Detector finished. Found {len(faces) if faces else 0} faces.")
         # Note: BBox and Landmarks are now in resized coordinates.
         # Since we use the same 'image' variable for ArcFace below, 
         # it is consistent. We don't need to scale back unless 

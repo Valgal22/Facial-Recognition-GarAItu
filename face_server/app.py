@@ -73,14 +73,6 @@ def recognize():
     if image is None:
         return jsonify(error="No image received"), 400
 
-    # --- Early exit rápido ---
-    quick = onnx_detector.detect(image, thresh=0.3)
-    if quick is None:
-        return jsonify(
-            recognized=False,
-            reason="no_face_fast"
-        ), 200
-
     # --- Pipeline UniFace correcto ---
     result, error = recognize_primary_face(image)
 
