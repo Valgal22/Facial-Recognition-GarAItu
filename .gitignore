@@ -9,4 +9,4 @@
 !nodeRED.json
 !nodeRED-Upload.json
 !face_server/
-!face_server/*
+!face_server/**
