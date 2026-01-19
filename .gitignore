@@ -10,3 +10,8 @@
 !nodeRED-Upload.json
 !face_server/
 !face_server/**
+!nodeRED_flow.json
+!node-red-tests/
+!node-red-tests/pom.xml
+!node-red-tests/src/
+!node-red-tests/src/**

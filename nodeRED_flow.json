@@ -1,0 +1,1706 @@
+[
+    {
+        "id": "tab_memorylens",
+        "type": "tab",
+        "label": "MemoryLens API Gateway",
+        "disabled": false,
+        "info": "API Gateway for MemoryLens App. Forwards requests to the backend REST Server."
+    },
+    {
+        "id": "group_auth",
+        "type": "group",
+        "z": "tab_memorylens",
+        "name": "Authentication & Admin",
+        "style": {
+            "stroke": "#999999",
+            "fill": "none",
+            "label": true
+        },
+        "nodes": [
+            "node_login_in",
+            "node_login_req",
+            "node_login_res",
+            "reg_in_node",
+            "reg_req_node",
+            "99979978dd98299b",
+            "fa11fb600d5e1d70",
+            "4416d9c066fee770",
+            "a7ed4992a0db69bb",
+            "e1d7fc2b52f62b67",
+            "join_in_node",
+            "adbf0e5776039929",
+            "join_req_node",
+            "5fb41cf53d09d7f3",
+            "f89bad1c0e4d3d4d",
+            "fix_header_node_create",
+            "f04ca65bab914415",
+            "4eeea0b75babe0cc",
+            "dc378ae81abfcc21",
+            "16e371d04f58c5f2",
+            "be43b15628ce12ee",
+            "fd06e2ed4d69671f",
+            "7361a2c08f4860d7",
+            "3226fcb2109f3a56",
+            "26a395f4be062b33",
+            "5364e0a1c47251e8",
+            "2b98a975dfae9267",
+            "11edbe19af22a272",
+            "5c610b56d8421c05",
+            "75477e3c418bc46d",
+            "get_members_in",
+            "get_members_func",
+            "get_members_req",
+            "get_members_resp",
+            "del_member_in",
+            "del_member_func",
+            "del_member_req",
+            "admin_debug"
+        ],
+        "x": 54,
+        "y": 139,
+        "w": 1252,
+        "h": 1162
+    },
+    {
+        "id": "group_family",
+        "type": "group",
+        "z": "tab_memorylens",
+        "name": "Family Dashboard (Uploads)",
+        "style": {
+            "stroke": "#ff9900",
+            "fill": "none",
+            "label": true
+        },
+        "nodes": [
+            "7d56586659032347",
+            "888606d16ee8f326",
+            "ef5397602b5bbfb6",
+            "36ce27764b41c634",
+            "96716cbd48d24088",
+            "be721deac428e7e5",
+            "274d546d69754083",
+            "7a78a1c7e82e3a17",
+            "b46f0fb33a0e61ee",
+            "a40438572d71538f",
+            "aa8faa764058dfca",
+            "354f5033ece5bb9f",
+            "25c80bd72bfb4194",
+            "365a127452fd6123",
+            "ebe9998c11fd8144",
+            "07cb06ee29d69e4f",
+            "98c4b40996f6ec07",
+            "82e84d50aab664f8",
+            "f0c142852c82c445",
+            "e6ffa1c963337b5c",
+            "133b98b41205ba3f"
+        ],
+        "x": 54,
+        "y": 1559,
+        "w": 2312,
+        "h": 542
+    },
+    {
+        "id": "group_patient",
+        "type": "group",
+        "z": "tab_memorylens",
+        "name": "Patient Dashboard (AI)",
+        "style": {
+            "stroke": "#0099ff",
+            "fill": "none",
+            "label": true
+        },
+        "nodes": [
+            "node_voice_in",
+            "node_voice_req",
+            "node_voice_res",
+            "057fa9e948a850c0",
+            "a38eed1b4763d9ba",
+            "d779c26e3cc1e768",
+            "409e97e06f3fb766",
+            "6435880670207383",
+            "4d3ba830193f2aff",
+            "3397b98f71e3f23d",
+            "a04663147d0cbee6",
+            "f687d0983cba6dcf",
+            "fb17f343de85686e",
+            "a5cf70cef51860af",
+            "d24b89ca2afc589e",
+            "82a7e8cae3d16c8d",
+            "10ccce6e8dd73bfa",
+            "803f6390ec23ad86",
+            "7e8bc1698f96f787",
+            "ad2323cb7b3377e7",
+            "schema_validator_node"
+        ],
+        "x": 54,
+        "y": 2179,
+        "w": 2512,
+        "h": 422
+    },
+    {
+        "id": "node_config_var",
+        "type": "change",
+        "z": "tab_memorylens",
+        "name": "Set Backend URL",
+        "rules": [
+            {
+                "t": "set",
+                "p": "baseUrl",
+                "pt": "flow",
+                "to": "http://localhost:5000",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "node_inject_init",
+        "type": "inject",
+        "z": "tab_memorylens",
+        "name": "Init Config",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 150,
+        "y": 40,
+        "wires": [
+            [
+                "node_config_var"
+            ]
+        ]
+    },
+    {
+        "id": "node_login_in",
+        "type": "http in",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "POST /api/auth/login",
+        "url": "/api/auth/login",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 240,
+        "wires": [
+            [
+                "node_login_req"
+            ]
+        ]
+    },
+    {
+        "id": "node_login_req",
+        "type": "http request",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "FWD -> /auth/login",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://localhost:8080/garAItu/auth/login",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 490,
+        "y": 240,
+        "wires": [
+            [
+                "node_login_res",
+                "a7ed4992a0db69bb"
+            ]
+        ]
+    },
+    {
+        "id": "node_login_res",
+        "type": "http response",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 750,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "node_voice_in",
+        "type": "http in",
+        "z": "tab_memorylens",
+        "g": "group_patient",
+        "name": "POST /api/query/voice",
+        "url": "/api/query/voice",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 2560,
+        "wires": [
+            [
+                "node_voice_req"
+            ]
+        ]
+    },
+    {
+        "id": "node_voice_req",
+        "type": "http request",
+        "z": "tab_memorylens",
+        "g": "group_patient",
+        "name": "FWD -> /query/voice",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "{{flow.baseUrl}}/api/query/voice",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 480,
+        "y": 2560,
+        "wires": [
+            [
+                "node_voice_res"
+            ]
+        ]
+    },
+    {
+        "id": "node_voice_res",
+        "type": "http response",
+        "z": "tab_memorylens",
+        "g": "group_patient",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 770,
+        "y": 2560,
+        "wires": []
+    },
+    {
+        "id": "reg_in_node",
+        "type": "http in",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "Register Endpoint",
+        "url": "/api/auth/register",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 300,
+        "wires": [
+            [
+                "reg_req_node",
+                "fa11fb600d5e1d70"
+            ]
+        ]
+    },
+    {
+        "id": "reg_req_node",
+        "type": "http request",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "Register (Spring Boot)",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://localhost:8080/garAItu/auth/register",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "Content-Type",
+                "valueType": "other",
+                "valueValue": "application/json"
+            }
+        ],
+        "x": 520,
+        "y": 300,
+        "wires": [
+            [
+                "99979978dd98299b",
+                "4416d9c066fee770"
+            ]
+        ]
+    },
+    {
+        "id": "99979978dd98299b",
+        "type": "http response",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 750,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "fa11fb600d5e1d70",
+        "type": "debug",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "debug 43",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 360,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "4416d9c066fee770",
+        "type": "debug",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "debug 44",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "a7ed4992a0db69bb",
+        "type": "debug",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "debug 45",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "join_in_node",
+        "type": "http in",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "Join Group Endpoint",
+        "url": "/api/groups/join",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 1020,
+        "wires": [
+            [
+                "adbf0e5776039929",
+                "e1d7fc2b52f62b67"
+            ]
+        ]
+    },
+    {
+        "id": "e1d7fc2b52f62b67",
+        "type": "debug",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "join_req_node",
+        "type": "http request",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "Join Group (Spring Boot)",
+        "method": "POST",
+        "ret": "obj",
+        "url": "http://localhost:8080/garAItu/group/join",
+        "x": 710,
+        "y": 1060,
+        "wires": [
+            [
+                "5364e0a1c47251e8",
+                "2b98a975dfae9267"
+            ]
+        ]
+    },
+    {
+        "id": "f04ca65bab914415",
+        "type": "http request",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "Create Group (Spring Boot)",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://localhost:8080/garAItu/group/create",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 680,
+        "y": 780,
+        "wires": [
+            [
+                "26a395f4be062b33",
+                "75477e3c418bc46d"
+            ]
+        ]
+    },
+    {
+        "id": "fix_header_node_create",
+        "type": "function",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "Add Headers",
+        "func": "msg.headers = {\n    \"X-Session-Id\": msg.req.headers[\"x-session-id\"],\n    \"Content-Type\": \"application/json\"\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 780,
+        "wires": [
+            [
+                "f04ca65bab914415",
+                "5c610b56d8421c05"
+            ]
+        ]
+    },
+    {
+        "id": "5fb41cf53d09d7f3",
+        "type": "http in",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "Create Group Endpoint",
+        "url": "/api/groups/create",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 200,
+        "y": 820,
+        "wires": [
+            [
+                "fix_header_node_create",
+                "f89bad1c0e4d3d4d"
+            ]
+        ]
+    },
+    {
+        "id": "f89bad1c0e4d3d4d",
+        "type": "debug",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "adbf0e5776039929",
+        "type": "function",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "Add Headers",
+        "func": "msg.headers = {\n    \"X-Session-Id\": msg.req.headers[\"x-session-id\"],\n    \"Content-Type\": \"application/json\"\n};\nreturn msg;",
+        "outputs": 1,
+        "x": 490,
+        "y": 1060,
+        "wires": [
+            [
+                "join_req_node",
+                "11edbe19af22a272"
+            ]
+        ]
+    },
+    {
+        "id": "4eeea0b75babe0cc",
+        "type": "http in",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "Invite Endpoint (App GET)",
+        "url": "/api/groups/:id/invite",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 560,
+        "wires": [
+            [
+                "dc378ae81abfcc21",
+                "16e371d04f58c5f2"
+            ]
+        ]
+    },
+    {
+        "id": "dc378ae81abfcc21",
+        "type": "function",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "Bridge: GET to POST & Headers",
+        "func": "// 1. Construimos la URL correcta para el Backend\nmsg.url = \"http://localhost:8080/garAItu/group/\" + msg.req.params.id + \"/invite\";\n\n// 2. Traducimos el GET del móvil a un POST para el Servidor\nmsg.method = \"POST\";\n\n// 3. Forward de la sesión\nmsg.headers = {\n    \"X-Session-Id\": msg.req.headers[\"x-session-id\"]\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 600,
+        "wires": [
+            [
+                "be43b15628ce12ee",
+                "fd06e2ed4d69671f"
+            ]
+        ]
+    },
+    {
+        "id": "16e371d04f58c5f2",
+        "type": "debug",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "Log: Raw Request",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 430,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "be43b15628ce12ee",
+        "type": "http request",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "Invite (Spring Boot Server)",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 760,
+        "y": 600,
+        "wires": [
+            [
+                "7361a2c08f4860d7"
+            ]
+        ]
+    },
+    {
+        "id": "fd06e2ed4d69671f",
+        "type": "debug",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "Log: Bridge Info",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "url",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "7361a2c08f4860d7",
+        "type": "function",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "Map inviteCode to code",
+        "func": "// El servidor devuelve 'inviteCode', pero la App busca 'code'\nif (msg.payload && msg.payload.inviteCode) {\n    msg.payload.code = msg.payload.inviteCode;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 600,
+        "wires": [
+            [
+                "3226fcb2109f3a56"
+            ]
+        ]
+    },
+    {
+        "id": "3226fcb2109f3a56",
+        "type": "http response",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1230,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "26a395f4be062b33",
+        "type": "http response",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 930,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "5364e0a1c47251e8",
+        "type": "http response",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 910,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "4696d3a8dea48b9c",
+        "type": "comment",
+        "z": "tab_memorylens",
+        "name": "Group/{id}/recognize para compararlo con los demas",
+        "info": "mandar embedding de imagen subida\n    comparar con los que estas subidos",
+        "x": 2570,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "057fa9e948a850c0",
+        "type": "http in",
+        "z": "tab_memorylens",
+        "g": "group_patient",
+        "name": "POST /api/recognize",
+        "url": "/api/recognize",
+        "method": "post",
+        "upload": true,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 210,
+        "y": 2340,
+        "wires": [
+            [
+                "a38eed1b4763d9ba"
+            ]
+        ]
+    },
+    {
+        "id": "a38eed1b4763d9ba",
+        "type": "function",
+        "z": "tab_memorylens",
+        "g": "group_patient",
+        "name": "Prepare Multipart",
+        "func": "if (msg.req.files && msg.req.files.length > 0) {\n    var file = msg.req.files[0];\n    \n    // 1. Extraer Auth y Params\n    // groupId viene en el cuerpo del multipart (msg.req.body) porque 'http in' de Node-RED parsea los campos de texto ahí.\n    msg.group_id = (msg.req.body && msg.req.body.groupId) ? msg.req.body.groupId : \"default\";\n    msg.session_id = msg.req.headers['x-session-id'];\n    \n    // Guardar los datos originales de la imagen para recuperarlos después de /detect\n    msg.original_image_data = {\n        buffer: file.buffer,\n        filename: file.originalname,\n        mimetype: file.mimetype\n    };\n    \n    msg.payload = {\n        \"image\": {\n            \"value\": file.buffer,\n            \"options\": {\n                \"filename\": file.originalname,\n                \"contentType\": file.mimetype\n            }\n        }\n    };\n    msg.headers = {};\n    msg.headers['content-type'] = 'multipart/form-data';\n} else {\n    msg.payload = {};\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 2340,
+        "wires": [
+            [
+                "d779c26e3cc1e768",
+                "7e8bc1698f96f787"
+            ]
+        ]
+    },
+    {
+        "id": "d779c26e3cc1e768",
+        "type": "http request",
+        "z": "tab_memorylens",
+        "g": "group_patient",
+        "name": "Request Flask",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://localhost:5000/detect",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 660,
+        "y": 2340,
+        "wires": [
+            [
+                "schema_validator_node",
+                "ad2323cb7b3377e7"
+            ]
+        ]
+    },
+    {
+        "id": "409e97e06f3fb766",
+        "type": "http response",
+        "z": "tab_memorylens",
+        "g": "group_patient",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 2360,
+        "y": 2460,
+        "wires": []
+    },
+    {
+        "id": "6435880670207383",
+        "type": "catch",
+        "z": "tab_memorylens",
+        "g": "group_patient",
+        "name": "Catch All",
+        "scope": null,
+        "uncaught": false,
+        "x": 460,
+        "y": 2460,
+        "wires": [
+            [
+                "4d3ba830193f2aff"
+            ]
+        ]
+    },
+    {
+        "id": "4d3ba830193f2aff",
+        "type": "function",
+        "z": "tab_memorylens",
+        "g": "group_patient",
+        "name": "Format Error",
+        "func": "msg.payload = { error: msg.error ? msg.error.message : 'Unknown error' };\nmsg.statusCode = 500;\nreturn msg;",
+        "outputs": 1,
+        "x": 660,
+        "y": 2460,
+        "wires": [
+            [
+                "409e97e06f3fb766"
+            ]
+        ]
+    },
+    {
+        "id": "3397b98f71e3f23d",
+        "type": "function",
+        "z": "tab_memorylens",
+        "g": "group_patient",
+        "name": "ValidateScore (>=0.5 → Uniface)",
+        "func": "const TH = flow.get('face_threshold') ?? 0.5;\nconst p = msg.payload || {};\nconst score = Number(p.score);\n\nif (Number.isNaN(score)) {\n    msg.error = { code: 'NO_SCORE', message: 'Missing/invalid score' };\n    msg.status = 400;\n    return [null, msg];\n}\n\nmsg.metrics = {\n    first_model_score: score,\n    threshold: TH\n};\n\nif (score >= TH) {\n    msg.route = 'to_uniface';\n    return [msg, null];\n}\n\nmsg.route = 'skip_uniface';\nmsg.result = {\n    recognized: false,\n    reason: 'score_below_threshold',\n    score\n};\nmsg.status = 200;\nreturn [null, msg];\n",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 2340,
+        "wires": [
+            [
+                "a04663147d0cbee6"
+            ],
+            [
+                "10ccce6e8dd73bfa"
+            ]
+        ]
+    },
+    {
+        "id": "a04663147d0cbee6",
+        "type": "function",
+        "z": "tab_memorylens",
+        "g": "group_patient",
+        "name": "StartTimer Uniface",
+        "func": "msg._t0 = Date.now();\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1190,
+        "y": 2320,
+        "wires": [
+            [
+                "f687d0983cba6dcf"
+            ]
+        ]
+    },
+    {
+        "id": "f687d0983cba6dcf",
+        "type": "function",
+        "z": "tab_memorylens",
+        "g": "group_patient",
+        "name": "Format Request → JSON",
+        "func": "// Recuperar imagen original guardada\nif (msg.original_image_data) {\n    msg.payload = {\n        \"image\": {\n            \"value\": msg.original_image_data.buffer,\n            \"options\": {\n                \"filename\": msg.original_image_data.filename,\n                \"contentType\": msg.original_image_data.mimetype\n            }\n        }\n    };\n    // Limpiar headers anteriores y forzar multipart\n    msg.headers = {};\n    msg.headers['content-type'] = 'multipart/form-data';\n} else {\n   // Fallback si no hay imagen (error?)\n   msg.payload = {};\n}\n\n// No necesitamos Authorization por ahora si es local\n// const token = flow.get('uniface_token');\n// msg.headers['Authorization'] = ...\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1410,
+        "y": 2320,
+        "wires": [
+            [
+                "fb17f343de85686e"
+            ]
+        ]
+    },
+    {
+        "id": "fb17f343de85686e",
+        "type": "http request",
+        "z": "tab_memorylens",
+        "g": "group_patient",
+        "name": "POST /recognize (Flask-Uniface)",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://localhost:5000/recognize",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1700,
+        "y": 2320,
+        "wires": [
+            [
+                "a5cf70cef51860af"
+            ]
+        ]
+    },
+    {
+        "id": "a5cf70cef51860af",
+        "type": "function",
+        "z": "tab_memorylens",
+        "g": "group_patient",
+        "name": "Format Response",
+        "func": "// Normaliza la respuesta del microservicio\nconst t = msg._t0 || Date.now();\nconst latency = Date.now() - t;\nconst resp = msg.payload || {};\nconst pf = resp.primary_face || {};\nlet embeddingBase64 = null;\nif (resp.embedding && Array.isArray(resp.embedding)) {\n    const floatArray = new Float32Array(resp.embedding);\n    const buffer = Buffer.from(floatArray.buffer);\n    embeddingBase64 = buffer.toString('base64');\n}\n\n// 2. Configurar llamada REST\nif (embeddingBase64) {\n    msg.payload = {\n        embeddingBase64: embeddingBase64,\n        minSim: 0.4,\n        top: 5\n    };\n    \n    // Headers\n    msg.headers = {};\n    msg.headers['Content-Type'] = 'application/json';\n    if (msg.session_id) {\n        msg.headers['X-Session-Id'] = msg.session_id;\n    }\n    \n    // URL endpoint Java\n    msg.url = `http://localhost:8080/garAItu/group/${msg.group_id}/recognize`;\n    \n    msg.metrics = msg.metrics || {};\n    msg.metrics.uniface_latency_ms = latency;\n    msg.local_result = { recognized: !!resp.recognized, primary_face: pf };\n\n    // SALIDA 1: Al REST\n    return [msg, null];\n} else {\n    // Si no hubo cara, no llamamos al REST. Respondemos directo.\n    msg.payload = { recognized: false, reason: \"No embedding generated\" };\n    \n    msg.metrics = msg.metrics || {};\n    msg.metrics.uniface_latency_ms = latency;\n    msg.local_result = { recognized: false, primary_face: pf };\n    \n    // SALIDA 2: Directo a Response\n    return [null, msg];\n}",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1950,
+        "y": 2320,
+        "wires": [
+            [
+                "d24b89ca2afc589e",
+                "803f6390ec23ad86"
+            ],
+            [
+                "409e97e06f3fb766"
+            ]
+        ]
+    },
+    {
+        "id": "d24b89ca2afc589e",
+        "type": "http request",
+        "z": "tab_memorylens",
+        "g": "group_patient",
+        "name": "POST (Java REST)",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2210,
+        "y": 2320,
+        "wires": [
+            [
+                "82a7e8cae3d16c8d",
+                "409e97e06f3fb766"
+            ]
+        ]
+    },
+    {
+        "id": "82a7e8cae3d16c8d",
+        "type": "debug",
+        "z": "tab_memorylens",
+        "g": "group_patient",
+        "name": "REST Response",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 2430,
+        "y": 2320,
+        "wires": []
+    },
+    {
+        "id": "10ccce6e8dd73bfa",
+        "type": "debug",
+        "z": "tab_memorylens",
+        "g": "group_patient",
+        "name": "Skip Uniface (score<0.5)",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1210,
+        "y": 2400,
+        "wires": []
+    },
+    {
+        "id": "803f6390ec23ad86",
+        "type": "debug",
+        "z": "tab_memorylens",
+        "g": "group_patient",
+        "name": "Final Result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 2150,
+        "y": 2220,
+        "wires": []
+    },
+    {
+        "id": "7e8bc1698f96f787",
+        "type": "debug",
+        "z": "tab_memorylens",
+        "g": "group_patient",
+        "name": "debug 46",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "group_id",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 2240,
+        "wires": []
+    },
+    {
+        "id": "7d56586659032347",
+        "type": "http in",
+        "z": "tab_memorylens",
+        "g": "group_family",
+        "name": "POST /api/upload",
+        "url": "/api/upload",
+        "method": "post",
+        "upload": true,
+        "x": 160,
+        "y": 1760,
+        "wires": [
+            [
+                "888606d16ee8f326",
+                "ebe9998c11fd8144"
+            ]
+        ]
+    },
+    {
+        "id": "888606d16ee8f326",
+        "type": "function",
+        "z": "tab_memorylens",
+        "g": "group_family",
+        "name": "Prepare Upload Params",
+        "func": "if (msg.req.files && msg.req.files.length > 0) {\n    const file = msg.req.files[0];\n\n    msg.member_id = msg.req.body?.id || null;\n    msg.session_id = msg.req.headers['x-session-id'];\n\n    if (!msg.member_id) {\n        msg.payload = { error: \"Missing member 'id' in multipart body\" };\n        msg.statusCode = 400;\n        msg._responded = true;\n        return [null, msg];\n    }\n\n    if (!msg.session_id) {\n        msg.payload = { error: \"Missing 'X-Session-Id' header\" };\n        msg.statusCode = 400;\n        msg._responded = true;\n        return [null, msg];\n    }\n\n    msg.original_image_data = {\n        buffer: file.buffer,\n        filename: file.originalname,\n        mimetype: file.mimetype\n    };\n\n    msg.payload = {\n        image: {\n            value: file.buffer,\n            options: {\n                filename: file.originalname,\n                contentType: file.mimetype\n            }\n        }\n    };\n\n    msg.headers = { 'content-type': 'multipart/form-data' };\n    return [msg, null];\n}\n\nmsg.payload = { error: \"No file uploaded\" };\nmsg.statusCode = 400;\nmsg._responded = true;\nreturn [null, msg];",
+        "outputs": 2,
+        "x": 400,
+        "y": 1760,
+        "wires": [
+            [
+                "ef5397602b5bbfb6"
+            ],
+            [
+                "b46f0fb33a0e61ee"
+            ]
+        ]
+    },
+    {
+        "id": "ef5397602b5bbfb6",
+        "type": "http request",
+        "z": "tab_memorylens",
+        "g": "group_family",
+        "name": "Request Flask Detect",
+        "method": "POST",
+        "ret": "obj",
+        "url": "http://localhost:5000/detect",
+        "senderr": true,
+        "x": 660,
+        "y": 1720,
+        "wires": [
+            [
+                "36ce27764b41c634",
+                "354f5033ece5bb9f"
+            ]
+        ]
+    },
+    {
+        "id": "36ce27764b41c634",
+        "type": "function",
+        "z": "tab_memorylens",
+        "g": "group_family",
+        "name": "Validate & Route",
+        "func": "const TH = 0.5;\nconst score = Number(msg.payload?.score);\n\nif (Number.isNaN(score) || score < TH) {\n    msg.payload = { error: 'No valid face detected (score < 0.5)' };\n    msg.statusCode = 400;\n    msg._responded = true;\n    return [null, msg];\n}\n\nreturn [msg, null];",
+        "outputs": 2,
+        "x": 910,
+        "y": 1720,
+        "wires": [
+            [
+                "96716cbd48d24088"
+            ],
+            [
+                "b46f0fb33a0e61ee"
+            ]
+        ]
+    },
+    {
+        "id": "96716cbd48d24088",
+        "type": "function",
+        "z": "tab_memorylens",
+        "g": "group_family",
+        "name": "Restore Image",
+        "func": "if (msg.original_image_data) {\n    msg.payload = {\n        image: {\n            value: msg.original_image_data.buffer,\n            options: {\n                filename: msg.original_image_data.filename,\n                contentType: msg.original_image_data.mimetype\n            }\n        }\n    };\n    msg.headers = { 'content-type': 'multipart/form-data' };\n}\nreturn msg;",
+        "outputs": 1,
+        "x": 1180,
+        "y": 1660,
+        "wires": [
+            [
+                "be721deac428e7e5"
+            ]
+        ]
+    },
+    {
+        "id": "be721deac428e7e5",
+        "type": "http request",
+        "z": "tab_memorylens",
+        "g": "group_family",
+        "name": "Flask Uniface",
+        "method": "POST",
+        "ret": "obj",
+        "url": "http://localhost:5000/recognize",
+        "senderr": true,
+        "x": 1420,
+        "y": 1660,
+        "wires": [
+            [
+                "274d546d69754083",
+                "25c80bd72bfb4194"
+            ]
+        ]
+    },
+    {
+        "id": "274d546d69754083",
+        "type": "function",
+        "z": "tab_memorylens",
+        "g": "group_family",
+        "name": "Prep Save REST",
+        "func": "const resp = msg.payload || {};\n\nif (resp.recognized === false) {\n    msg.payload = { error: 'No face generated by Uniface' };\n    msg.statusCode = 400;\n    msg._responded = true;\n    return [null, msg];\n}\n\nif (!Array.isArray(resp.embedding)) {\n    msg.payload = { error: 'No embedding generated' };\n    msg.statusCode = 500;\n    msg._responded = true;\n    return [null, msg];\n}\n\nconst floatArray = new Float32Array(resp.embedding);\nconst buffer = Buffer.from(floatArray.buffer);\n\nmsg.url = `http://localhost:8080/garAItu/member/${msg.member_id}/embedding`;\nmsg.headers = {\n    'Content-Type': 'application/json',\n    'X-Session-Id': msg.session_id\n};\n\nmsg.payload = { embeddingBase64: buffer.toString('base64') };\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1680,
+        "y": 1660,
+        "wires": [
+            [
+                "7a78a1c7e82e3a17"
+            ],
+            [
+                "b46f0fb33a0e61ee"
+            ]
+        ]
+    },
+    {
+        "id": "7a78a1c7e82e3a17",
+        "type": "http request",
+        "z": "tab_memorylens",
+        "g": "group_family",
+        "name": "PUT Java Save",
+        "method": "PUT",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": true,
+        "headers": [],
+        "x": 1980,
+        "y": 1660,
+        "wires": [
+            [
+                "a40438572d71538f",
+                "365a127452fd6123"
+            ]
+        ]
+    },
+    {
+        "id": "b46f0fb33a0e61ee",
+        "type": "function",
+        "z": "tab_memorylens",
+        "g": "group_family",
+        "name": "Format Upload Error",
+        "func": "if (msg._responded) return null;\n\nmsg.payload = { error: msg.payload?.error || msg.error || 'Unknown error' };\nmsg.statusCode = msg.statusCode || 400;\nmsg._responded = true;\nreturn msg;",
+        "outputs": 1,
+        "x": 1430,
+        "y": 1860,
+        "wires": [
+            [
+                "a40438572d71538f"
+            ]
+        ]
+    },
+    {
+        "id": "a40438572d71538f",
+        "type": "http response",
+        "z": "tab_memorylens",
+        "g": "group_family",
+        "name": "Upload Response",
+        "x": 2250,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "aa8faa764058dfca",
+        "type": "catch",
+        "z": "tab_memorylens",
+        "g": "group_family",
+        "name": "Catch Errors",
+        "x": 860,
+        "y": 1860,
+        "wires": [
+            [
+                "b46f0fb33a0e61ee"
+            ]
+        ]
+    },
+    {
+        "id": "ad2323cb7b3377e7",
+        "type": "debug",
+        "z": "tab_memorylens",
+        "g": "group_patient",
+        "name": "debug 47",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 2260,
+        "wires": []
+    },
+    {
+        "id": "2b98a975dfae9267",
+        "type": "debug",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "debug 49",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "11edbe19af22a272",
+        "type": "debug",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "debug 54",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "354f5033ece5bb9f",
+        "type": "debug",
+        "z": "tab_memorylens",
+        "g": "group_family",
+        "name": "debug 55",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "25c80bd72bfb4194",
+        "type": "debug",
+        "z": "tab_memorylens",
+        "g": "group_family",
+        "name": "debug 56",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1600,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "365a127452fd6123",
+        "type": "debug",
+        "z": "tab_memorylens",
+        "g": "group_family",
+        "name": "debug 57",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2260,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "ebe9998c11fd8144",
+        "type": "debug",
+        "z": "tab_memorylens",
+        "g": "group_family",
+        "name": "debug 58",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "5c610b56d8421c05",
+        "type": "debug",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "debug 59",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "75477e3c418bc46d",
+        "type": "debug",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "debug 60",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "get_members_in",
+        "type": "http in",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "GET /api/group/:id/member",
+        "url": "/api/group/:id/member",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 1160,
+        "wires": [
+            [
+                "get_members_func"
+            ]
+        ]
+    },
+    {
+        "id": "get_members_func",
+        "type": "function",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "Prepare GET Request",
+        "func": "msg.url = \"http://localhost:8080/garAItu/group/\" + msg.req.params.id + \"/member\";\nmsg.headers = {\n    \"X-Session-Id\": msg.req.headers[\"x-session-id\"],\n    \"Content-Type\": \"application/json\"\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 1160,
+        "wires": [
+            [
+                "get_members_req"
+            ]
+        ]
+    },
+    {
+        "id": "get_members_req",
+        "type": "http request",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "Spring Boot GET",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 680,
+        "y": 1160,
+        "wires": [
+            [
+                "get_members_resp",
+                "admin_debug"
+            ]
+        ]
+    },
+    {
+        "id": "get_members_resp",
+        "type": "http response",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1040,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "del_member_in",
+        "type": "http in",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "DELETE /garAItu/...",
+        "url": "/garAItu/group/:groupId/member/:memberId",
+        "method": "delete",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 1260,
+        "wires": [
+            [
+                "del_member_func"
+            ]
+        ]
+    },
+    {
+        "id": "del_member_func",
+        "type": "function",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "Prepare DELETE Request",
+        "func": "msg.url = \"http://localhost:8080/garAItu/group/\" + msg.req.params.groupId + \"/member/\" + msg.req.params.memberId;\nmsg.headers = {\n    \"X-Session-Id\": msg.req.headers[\"x-session-id\"],\n    \"Content-Type\": \"application/json\"\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 1260,
+        "wires": [
+            [
+                "del_member_req"
+            ]
+        ]
+    },
+    {
+        "id": "del_member_req",
+        "type": "http request",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "Spring Boot DELETE",
+        "method": "DELETE",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 700,
+        "y": 1260,
+        "wires": [
+            [
+                "get_members_resp",
+                "admin_debug"
+            ]
+        ]
+    },
+    {
+        "id": "admin_debug",
+        "type": "debug",
+        "z": "tab_memorylens",
+        "g": "group_auth",
+        "name": "Admin Debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "07cb06ee29d69e4f",
+        "type": "debug",
+        "z": "tab_memorylens",
+        "g": "group_family",
+        "name": "debug 61",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 2000,
+        "wires": []
+    },
+    {
+        "id": "98c4b40996f6ec07",
+        "type": "debug",
+        "z": "tab_memorylens",
+        "g": "group_family",
+        "name": "debug 62",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 2000,
+        "wires": []
+    },
+    {
+        "id": "82e84d50aab664f8",
+        "type": "http in",
+        "z": "tab_memorylens",
+        "g": "group_family",
+        "name": "PUT /garAItu/member/:id",
+        "url": "/garAItu/member/:id",
+        "method": "put",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 210,
+        "y": 2060,
+        "wires": [
+            [
+                "f0c142852c82c445",
+                "98c4b40996f6ec07"
+            ]
+        ]
+    },
+    {
+        "id": "f0c142852c82c445",
+        "type": "function",
+        "z": "tab_memorylens",
+        "g": "group_family",
+        "name": "Prepare PUT Request",
+        "func": "msg.url = \"http://localhost:8080/garAItu/member/\" + msg.req.params.id;\nmsg.headers = {\n    \"X-Session-Id\": msg.req.headers[\"x-session-id\"],\n    \"Content-Type\": \"application/json\"\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 2060,
+        "wires": [
+            [
+                "e6ffa1c963337b5c"
+            ]
+        ]
+    },
+    {
+        "id": "e6ffa1c963337b5c",
+        "type": "http request",
+        "z": "tab_memorylens",
+        "g": "group_family",
+        "name": "Spring Boot PUT",
+        "method": "PUT",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 690,
+        "y": 2060,
+        "wires": [
+            [
+                "133b98b41205ba3f",
+                "07cb06ee29d69e4f"
+            ]
+        ]
+    },
+    {
+        "id": "133b98b41205ba3f",
+        "type": "http response",
+        "z": "tab_memorylens",
+        "g": "group_family",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 900,
+        "y": 2060,
+        "wires": []
+    },
+    {
+        "id": "schema_validator_node",
+        "type": "function",
+        "z": "tab_memorylens",
+        "g": "group_patient",
+        "name": "Schema Validator",
+        "func": "const payload = msg.payload;\nlet valid = true;\nlet error = \"\";\n\nif (typeof payload !== 'object' || payload === null) {\n    valid = false;\n    error = \"Payload is not an object\";\n} else {\n    if (!(\"detected\" in payload)) {\n        valid = false;\n        error = \"Missing required property: detected\";\n    }\n    if (payload.score && typeof payload.score !== 'number') {\n        valid = false;\n        error = \"Invalid type for score: expected number\";\n    }\n    if (payload.bbox && !Array.isArray(payload.bbox)) {\n        valid = false;\n        error = \"Invalid type for bbox: expected array\";\n    }\n}\n\nif (!valid) {\n    msg.error = { message: \"Schema Validation Failed: \" + error, payload: msg.payload };\n    return [null, msg];\n}\n\nreturn [msg, null];",
+        "outputs": 2,
+        "x": 800,
+        "y": 2340,
+        "wires": [
+            [
+                "3397b98f71e3f23d"
+            ],
+            [
+                "4d3ba830193f2aff"
+            ]
+        ]
+    }
+]
