@@ -2,3 +2,5 @@ flask
 numpy
 opencv-python
 uniface
+onnxruntime
+requests

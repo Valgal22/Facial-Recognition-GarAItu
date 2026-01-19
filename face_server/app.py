@@ -13,8 +13,12 @@ app = Flask(__name__)
 # ----------------------------------------------------
 # Inicialización modelos (UNA SOLA VEZ)
 # ----------------------------------------------------
+import os
+base_dir = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(base_dir, "models", "face_detector.onnx")
+
 onnx_detector = ONNXFaceDetector(
-    model_path="models/face_detector.onnx"
+    model_path=model_path
 )
 
 # ----------------------------------------------------
