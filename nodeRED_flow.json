@@ -1,15 +1,15 @@
 [
     {
-        "id": "tab_memorylens",
+        "id": "f401fdcbbfac5f65",
         "type": "tab",
         "label": "MemoryLens API Gateway",
         "disabled": false,
         "info": "API Gateway for MemoryLens App. Forwards requests to the backend REST Server."
     },
     {
-        "id": "group_auth",
+        "id": "bdd4339d9545b60f",
         "type": "group",
-        "z": "tab_memorylens",
+        "z": "f401fdcbbfac5f65",
         "name": "Authentication & Admin",
         "style": {
             "stroke": "#999999",
@@ -17,54 +17,59 @@
             "label": true
         },
         "nodes": [
-            "node_login_in",
-            "node_login_req",
-            "node_login_res",
-            "reg_in_node",
-            "reg_req_node",
-            "99979978dd98299b",
-            "fa11fb600d5e1d70",
-            "4416d9c066fee770",
-            "a7ed4992a0db69bb",
-            "e1d7fc2b52f62b67",
-            "join_in_node",
-            "adbf0e5776039929",
-            "join_req_node",
-            "5fb41cf53d09d7f3",
-            "f89bad1c0e4d3d4d",
-            "fix_header_node_create",
-            "f04ca65bab914415",
-            "4eeea0b75babe0cc",
-            "dc378ae81abfcc21",
-            "16e371d04f58c5f2",
-            "be43b15628ce12ee",
-            "fd06e2ed4d69671f",
-            "7361a2c08f4860d7",
-            "3226fcb2109f3a56",
-            "26a395f4be062b33",
-            "5364e0a1c47251e8",
-            "2b98a975dfae9267",
-            "11edbe19af22a272",
-            "5c610b56d8421c05",
-            "75477e3c418bc46d",
-            "get_members_in",
-            "get_members_func",
-            "get_members_req",
-            "get_members_resp",
-            "del_member_in",
-            "del_member_func",
-            "del_member_req",
-            "admin_debug"
+            "f6599ad6d46f2845",
+            "56d00e3158486966",
+            "b3fab1bd89c4889f",
+            "a4e0fa1f7b1e5de4",
+            "dc3546bc97d5be1c",
+            "e073d07b1cf07e29",
+            "86360f0fb7940e93",
+            "55faf8f8db1e43d6",
+            "8fb47cc81c433997",
+            "5552eb13a9ae8bab",
+            "1ae0627ac3e78ef8",
+            "c4cb8b796b61785e",
+            "116aef2c32278b93",
+            "a75f1aa55bcf862c",
+            "428904332c12bf96",
+            "9a66101b4c7358b5",
+            "f4e404e12216f202",
+            "cac751dfbb032099",
+            "1fd7d1195ba850a6",
+            "0b14570bce83d2de",
+            "26460cfcb6e45a83",
+            "5fb1cde3b9b36f70",
+            "d1849dabbd6789c8",
+            "c2ad5748289913de",
+            "56c5851b16dd3c50",
+            "5fe8614cb3c9b6d1",
+            "576526786f7ab1a9",
+            "074c47ebb78f66cf",
+            "bdc58ca06ba8b61b",
+            "3b01dac305ecbba4",
+            "49408806708bdedf",
+            "f414681fd063e2c1",
+            "fbc1986c9cbfcde7",
+            "f525322396f4b782",
+            "dcb68171d9907ea1",
+            "d211f2d2d7f0d567",
+            "cfca68df60fd3708",
+            "8f1bf987de176347",
+            "node_prep_admin_query",
+            "2a3f2842876d115f",
+            "606cd181173ad849",
+            "663e95d418453edf",
+            "80f60a536afbb1a3"
         ],
-        "x": 54,
-        "y": 139,
-        "w": 1252,
-        "h": 1162
+        "x": -6,
+        "y": 99,
+        "w": 1392,
+        "h": 1202
     },
     {
-        "id": "group_family",
+        "id": "7b3c34c1b7d953f3",
         "type": "group",
-        "z": "tab_memorylens",
+        "z": "f401fdcbbfac5f65",
         "name": "Family Dashboard (Uploads)",
         "style": {
             "stroke": "#ff9900",
@@ -72,27 +77,27 @@
             "label": true
         },
         "nodes": [
-            "7d56586659032347",
-            "888606d16ee8f326",
-            "ef5397602b5bbfb6",
-            "36ce27764b41c634",
-            "96716cbd48d24088",
-            "be721deac428e7e5",
-            "274d546d69754083",
-            "7a78a1c7e82e3a17",
-            "b46f0fb33a0e61ee",
-            "a40438572d71538f",
-            "aa8faa764058dfca",
-            "354f5033ece5bb9f",
-            "25c80bd72bfb4194",
-            "365a127452fd6123",
-            "ebe9998c11fd8144",
-            "07cb06ee29d69e4f",
-            "98c4b40996f6ec07",
-            "82e84d50aab664f8",
-            "f0c142852c82c445",
-            "e6ffa1c963337b5c",
-            "133b98b41205ba3f"
+            "499b2c94f0d6854e",
+            "96d79a4be615369d",
+            "7905ab3b7e421c6a",
+            "07011b46bcab4760",
+            "4bfe84ba3114530a",
+            "eac855d529450032",
+            "9f050bf92daa2afe",
+            "f21904be2f223a8d",
+            "4c61489e22353575",
+            "3c5a34744f6ed993",
+            "ecf61e5dc7012798",
+            "5abf9dc108d4ff51",
+            "c02a4744217d998e",
+            "3e2793ad212426b1",
+            "ada509faf70be413",
+            "1f3422d7508e1629",
+            "8811d1d6c86cac83",
+            "7446c78818744fb6",
+            "c3a5947ef93ed9ec",
+            "fbb5a3f799ce9c34",
+            "0f4b219282a2492b"
         ],
         "x": 54,
         "y": 1559,
@@ -100,9 +105,9 @@
         "h": 542
     },
     {
-        "id": "group_patient",
+        "id": "c0e3434035393a19",
         "type": "group",
-        "z": "tab_memorylens",
+        "z": "f401fdcbbfac5f65",
         "name": "Patient Dashboard (AI)",
         "style": {
             "stroke": "#0099ff",
@@ -110,37 +115,42 @@
             "label": true
         },
         "nodes": [
-            "node_voice_in",
-            "node_voice_req",
-            "node_voice_res",
-            "057fa9e948a850c0",
-            "a38eed1b4763d9ba",
-            "d779c26e3cc1e768",
-            "409e97e06f3fb766",
-            "6435880670207383",
-            "4d3ba830193f2aff",
-            "3397b98f71e3f23d",
-            "a04663147d0cbee6",
-            "f687d0983cba6dcf",
-            "fb17f343de85686e",
-            "a5cf70cef51860af",
-            "d24b89ca2afc589e",
-            "82a7e8cae3d16c8d",
-            "10ccce6e8dd73bfa",
-            "803f6390ec23ad86",
-            "7e8bc1698f96f787",
-            "ad2323cb7b3377e7",
-            "schema_validator_node"
+            "6fcab43671a79b58",
+            "e079b5f417031ff5",
+            "83af7d6e6e8509a2",
+            "f6ab3ee87f64c43c",
+            "49590515d651c23a",
+            "72ec20b38702b276",
+            "4508ed4c30f86561",
+            "0247972094e760f2",
+            "357fb1873c129e69",
+            "e8e981f2ca5c4abe",
+            "956415bcc92517d0",
+            "d668408af403cc29",
+            "c9269ff01df1ff4a",
+            "c4680890b86d499e",
+            "9871db02f2977772",
+            "0fca49dd62c8a062",
+            "e0e470e2e46ac126",
+            "9a06b60a602e8cc7",
+            "c0f32c96174cb713",
+            "f7ad0676505f4fd9",
+            "5fcb57ee3bc62f8c",
+            "be18b00db4886fdc",
+            "31046d4e18a70d4f",
+            "b447439b37a45d2b",
+            "76dba37b75424dcd",
+            "a36cba65c7023148"
         ],
-        "x": 54,
-        "y": 2179,
-        "w": 2512,
-        "h": 422
+        "x": -16,
+        "y": 2019,
+        "w": 2742,
+        "h": 542
     },
     {
-        "id": "node_config_var",
+        "id": "20211de132fded6c",
         "type": "change",
-        "z": "tab_memorylens",
+        "z": "f401fdcbbfac5f65",
         "name": "Set Backend URL",
         "rules": [
             {
@@ -163,9 +173,9 @@
         ]
     },
     {
-        "id": "node_inject_init",
+        "id": "6c871a78725f3789",
         "type": "inject",
-        "z": "tab_memorylens",
+        "z": "f401fdcbbfac5f65",
         "name": "Init Config",
         "props": [],
         "repeat": "",
@@ -177,34 +187,34 @@
         "y": 40,
         "wires": [
             [
-                "node_config_var"
+                "20211de132fded6c"
             ]
         ]
     },
     {
-        "id": "node_login_in",
+        "id": "f6599ad6d46f2845",
         "type": "http in",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "POST /api/auth/login",
         "url": "/api/auth/login",
         "method": "post",
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 190,
+        "x": 150,
         "y": 240,
         "wires": [
             [
-                "node_login_req"
+                "663e95d418453edf"
             ]
         ]
     },
     {
-        "id": "node_login_req",
+        "id": "56d00e3158486966",
         "type": "http request",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "FWD -> /auth/login",
         "method": "POST",
         "ret": "obj",
@@ -221,47 +231,47 @@
         "y": 240,
         "wires": [
             [
-                "node_login_res",
-                "a7ed4992a0db69bb"
+                "b3fab1bd89c4889f",
+                "8fb47cc81c433997"
             ]
         ]
     },
     {
-        "id": "node_login_res",
+        "id": "b3fab1bd89c4889f",
         "type": "http response",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 750,
+        "x": 870,
         "y": 240,
         "wires": []
     },
     {
-        "id": "node_voice_in",
+        "id": "6fcab43671a79b58",
         "type": "http in",
-        "z": "tab_memorylens",
-        "g": "group_patient",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
         "name": "POST /api/query/voice",
         "url": "/api/query/voice",
         "method": "post",
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 180,
-        "y": 2560,
+        "x": 220,
+        "y": 2520,
         "wires": [
             [
-                "node_voice_req"
+                "e079b5f417031ff5"
             ]
         ]
     },
     {
-        "id": "node_voice_req",
+        "id": "e079b5f417031ff5",
         "type": "http request",
-        "z": "tab_memorylens",
-        "g": "group_patient",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
         "name": "FWD -> /query/voice",
         "method": "POST",
         "ret": "obj",
@@ -274,51 +284,51 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 480,
-        "y": 2560,
+        "x": 520,
+        "y": 2520,
         "wires": [
             [
-                "node_voice_res"
+                "83af7d6e6e8509a2"
             ]
         ]
     },
     {
-        "id": "node_voice_res",
+        "id": "83af7d6e6e8509a2",
         "type": "http response",
-        "z": "tab_memorylens",
-        "g": "group_patient",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 770,
-        "y": 2560,
+        "x": 810,
+        "y": 2520,
         "wires": []
     },
     {
-        "id": "reg_in_node",
+        "id": "a4e0fa1f7b1e5de4",
         "type": "http in",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "Register Endpoint",
         "url": "/api/auth/register",
         "method": "post",
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 190,
-        "y": 300,
+        "x": 110,
+        "y": 400,
         "wires": [
             [
-                "reg_req_node",
-                "fa11fb600d5e1d70"
+                "86360f0fb7940e93",
+                "80f60a536afbb1a3"
             ]
         ]
     },
     {
-        "id": "reg_req_node",
+        "id": "dc3546bc97d5be1c",
         "type": "http request",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "Register (Spring Boot)",
         "method": "POST",
         "ret": "obj",
@@ -338,32 +348,32 @@
                 "valueValue": "application/json"
             }
         ],
-        "x": 520,
+        "x": 680,
         "y": 300,
         "wires": [
             [
-                "99979978dd98299b",
-                "4416d9c066fee770"
+                "e073d07b1cf07e29",
+                "55faf8f8db1e43d6"
             ]
         ]
     },
     {
-        "id": "99979978dd98299b",
+        "id": "e073d07b1cf07e29",
         "type": "http response",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 750,
-        "y": 300,
+        "x": 990,
+        "y": 340,
         "wires": []
     },
     {
-        "id": "fa11fb600d5e1d70",
+        "id": "86360f0fb7940e93",
         "type": "debug",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "debug 43",
         "active": true,
         "tosidebar": true,
@@ -373,15 +383,15 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 360,
-        "y": 360,
+        "x": 460,
+        "y": 380,
         "wires": []
     },
     {
-        "id": "4416d9c066fee770",
+        "id": "55faf8f8db1e43d6",
         "type": "debug",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "debug 44",
         "active": true,
         "tosidebar": true,
@@ -391,15 +401,15 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 700,
-        "y": 360,
+        "x": 920,
+        "y": 400,
         "wires": []
     },
     {
-        "id": "a7ed4992a0db69bb",
+        "id": "8fb47cc81c433997",
         "type": "debug",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "debug 45",
         "active": true,
         "tosidebar": true,
@@ -408,35 +418,35 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 740,
-        "y": 180,
+        "x": 840,
+        "y": 140,
         "wires": []
     },
     {
-        "id": "join_in_node",
+        "id": "1ae0627ac3e78ef8",
         "type": "http in",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "Join Group Endpoint",
         "url": "/api/groups/join",
         "method": "post",
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 190,
-        "y": 1020,
+        "x": 150,
+        "y": 1040,
         "wires": [
             [
-                "adbf0e5776039929",
-                "e1d7fc2b52f62b67"
+                "5552eb13a9ae8bab",
+                "2a3f2842876d115f"
             ]
         ]
     },
     {
-        "id": "e1d7fc2b52f62b67",
+        "id": "5552eb13a9ae8bab",
         "type": "debug",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "debug 5",
         "active": true,
         "tosidebar": true,
@@ -450,28 +460,37 @@
         "wires": []
     },
     {
-        "id": "join_req_node",
+        "id": "116aef2c32278b93",
         "type": "http request",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "Join Group (Spring Boot)",
         "method": "POST",
         "ret": "obj",
+        "paytoqs": "ignore",
         "url": "http://localhost:8080/garAItu/group/join",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
         "x": 710,
         "y": 1060,
         "wires": [
             [
-                "5364e0a1c47251e8",
-                "2b98a975dfae9267"
+                "5fe8614cb3c9b6d1",
+                "576526786f7ab1a9",
+                "node_prep_admin_query"
             ]
         ]
     },
     {
-        "id": "f04ca65bab914415",
+        "id": "f4e404e12216f202",
         "type": "http request",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "Create Group (Spring Boot)",
         "method": "POST",
         "ret": "obj",
@@ -488,16 +507,16 @@
         "y": 780,
         "wires": [
             [
-                "26a395f4be062b33",
-                "75477e3c418bc46d"
+                "56c5851b16dd3c50",
+                "3b01dac305ecbba4"
             ]
         ]
     },
     {
-        "id": "fix_header_node_create",
+        "id": "9a66101b4c7358b5",
         "type": "function",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "Add Headers",
         "func": "msg.headers = {\n    \"X-Session-Id\": msg.req.headers[\"x-session-id\"],\n    \"Content-Type\": \"application/json\"\n};\nreturn msg;",
         "outputs": 1,
@@ -510,16 +529,16 @@
         "y": 780,
         "wires": [
             [
-                "f04ca65bab914415",
-                "5c610b56d8421c05"
+                "f4e404e12216f202",
+                "bdc58ca06ba8b61b"
             ]
         ]
     },
     {
-        "id": "5fb41cf53d09d7f3",
+        "id": "a75f1aa55bcf862c",
         "type": "http in",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "Create Group Endpoint",
         "url": "/api/groups/create",
         "method": "post",
@@ -530,16 +549,16 @@
         "y": 820,
         "wires": [
             [
-                "fix_header_node_create",
-                "f89bad1c0e4d3d4d"
+                "9a66101b4c7358b5",
+                "428904332c12bf96"
             ]
         ]
     },
     {
-        "id": "f89bad1c0e4d3d4d",
+        "id": "428904332c12bf96",
         "type": "debug",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "debug 4",
         "active": true,
         "tosidebar": true,
@@ -553,47 +572,52 @@
         "wires": []
     },
     {
-        "id": "adbf0e5776039929",
+        "id": "c4cb8b796b61785e",
         "type": "function",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "Add Headers",
-        "func": "msg.headers = {\n    \"X-Session-Id\": msg.req.headers[\"x-session-id\"],\n    \"Content-Type\": \"application/json\"\n};\nreturn msg;",
+        "func": "msg.headers = msg.headers || {};\nmsg.headers[\"X-Session-Id\"] = msg.req.headers[\"x-session-id\"];\nmsg.headers[\"Content-Type\"] = \"application/json\";\nreturn msg;\n",
         "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
         "x": 490,
-        "y": 1060,
+        "y": 1040,
         "wires": [
             [
-                "join_req_node",
-                "11edbe19af22a272"
+                "116aef2c32278b93",
+                "074c47ebb78f66cf"
             ]
         ]
     },
     {
-        "id": "4eeea0b75babe0cc",
+        "id": "cac751dfbb032099",
         "type": "http in",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "Invite Endpoint (App GET)",
         "url": "/api/groups/:id/invite",
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 190,
+        "x": 130,
         "y": 560,
         "wires": [
             [
-                "dc378ae81abfcc21",
-                "16e371d04f58c5f2"
+                "1fd7d1195ba850a6",
+                "0b14570bce83d2de"
             ]
         ]
     },
     {
-        "id": "dc378ae81abfcc21",
+        "id": "1fd7d1195ba850a6",
         "type": "function",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "Bridge: GET to POST & Headers",
         "func": "// 1. Construimos la URL correcta para el Backend\nmsg.url = \"http://localhost:8080/garAItu/group/\" + msg.req.params.id + \"/invite\";\n\n// 2. Traducimos el GET del móvil a un POST para el Servidor\nmsg.method = \"POST\";\n\n// 3. Forward de la sesión\nmsg.headers = {\n    \"X-Session-Id\": msg.req.headers[\"x-session-id\"]\n};\n\nreturn msg;",
         "outputs": 1,
@@ -605,16 +629,16 @@
         "y": 600,
         "wires": [
             [
-                "be43b15628ce12ee",
-                "fd06e2ed4d69671f"
+                "26460cfcb6e45a83",
+                "5fb1cde3b9b36f70"
             ]
         ]
     },
     {
-        "id": "16e371d04f58c5f2",
+        "id": "0b14570bce83d2de",
         "type": "debug",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "Log: Raw Request",
         "active": true,
         "tosidebar": true,
@@ -629,10 +653,10 @@
         "wires": []
     },
     {
-        "id": "be43b15628ce12ee",
+        "id": "26460cfcb6e45a83",
         "type": "http request",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "Invite (Spring Boot Server)",
         "method": "POST",
         "ret": "obj",
@@ -649,15 +673,15 @@
         "y": 600,
         "wires": [
             [
-                "7361a2c08f4860d7"
+                "d1849dabbd6789c8"
             ]
         ]
     },
     {
-        "id": "fd06e2ed4d69671f",
+        "id": "5fb1cde3b9b36f70",
         "type": "debug",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "Log: Bridge Info",
         "active": true,
         "tosidebar": true,
@@ -672,10 +696,10 @@
         "wires": []
     },
     {
-        "id": "7361a2c08f4860d7",
+        "id": "d1849dabbd6789c8",
         "type": "function",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "Map inviteCode to code",
         "func": "// El servidor devuelve 'inviteCode', pero la App busca 'code'\nif (msg.payload && msg.payload.inviteCode) {\n    msg.payload.code = msg.payload.inviteCode;\n}\nreturn msg;",
         "outputs": 1,
@@ -687,15 +711,15 @@
         "y": 600,
         "wires": [
             [
-                "3226fcb2109f3a56"
+                "c2ad5748289913de"
             ]
         ]
     },
     {
-        "id": "3226fcb2109f3a56",
+        "id": "c2ad5748289913de",
         "type": "http response",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "",
         "statusCode": "",
         "headers": {},
@@ -704,10 +728,10 @@
         "wires": []
     },
     {
-        "id": "26a395f4be062b33",
+        "id": "56c5851b16dd3c50",
         "type": "http response",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "",
         "statusCode": "",
         "headers": {},
@@ -716,21 +740,21 @@
         "wires": []
     },
     {
-        "id": "5364e0a1c47251e8",
+        "id": "5fe8614cb3c9b6d1",
         "type": "http response",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 910,
+        "x": 970,
         "y": 1060,
         "wires": []
     },
     {
-        "id": "4696d3a8dea48b9c",
+        "id": "8c5f88e1bc7ddd29",
         "type": "comment",
-        "z": "tab_memorylens",
+        "z": "f401fdcbbfac5f65",
         "name": "Group/{id}/recognize para compararlo con los demas",
         "info": "mandar embedding de imagen subida\n    comparar con los que estas subidos",
         "x": 2570,
@@ -738,329 +762,10 @@
         "wires": []
     },
     {
-        "id": "057fa9e948a850c0",
+        "id": "499b2c94f0d6854e",
         "type": "http in",
-        "z": "tab_memorylens",
-        "g": "group_patient",
-        "name": "POST /api/recognize",
-        "url": "/api/recognize",
-        "method": "post",
-        "upload": true,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 210,
-        "y": 2340,
-        "wires": [
-            [
-                "a38eed1b4763d9ba"
-            ]
-        ]
-    },
-    {
-        "id": "a38eed1b4763d9ba",
-        "type": "function",
-        "z": "tab_memorylens",
-        "g": "group_patient",
-        "name": "Prepare Multipart",
-        "func": "if (msg.req.files && msg.req.files.length > 0) {\n    var file = msg.req.files[0];\n    \n    // 1. Extraer Auth y Params\n    // groupId viene en el cuerpo del multipart (msg.req.body) porque 'http in' de Node-RED parsea los campos de texto ahí.\n    msg.group_id = (msg.req.body && msg.req.body.groupId) ? msg.req.body.groupId : \"default\";\n    msg.session_id = msg.req.headers['x-session-id'];\n    \n    // Guardar los datos originales de la imagen para recuperarlos después de /detect\n    msg.original_image_data = {\n        buffer: file.buffer,\n        filename: file.originalname,\n        mimetype: file.mimetype\n    };\n    \n    msg.payload = {\n        \"image\": {\n            \"value\": file.buffer,\n            \"options\": {\n                \"filename\": file.originalname,\n                \"contentType\": file.mimetype\n            }\n        }\n    };\n    msg.headers = {};\n    msg.headers['content-type'] = 'multipart/form-data';\n} else {\n    msg.payload = {};\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 440,
-        "y": 2340,
-        "wires": [
-            [
-                "d779c26e3cc1e768",
-                "7e8bc1698f96f787"
-            ]
-        ]
-    },
-    {
-        "id": "d779c26e3cc1e768",
-        "type": "http request",
-        "z": "tab_memorylens",
-        "g": "group_patient",
-        "name": "Request Flask",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "http://localhost:5000/detect",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 660,
-        "y": 2340,
-        "wires": [
-            [
-                "schema_validator_node",
-                "ad2323cb7b3377e7"
-            ]
-        ]
-    },
-    {
-        "id": "409e97e06f3fb766",
-        "type": "http response",
-        "z": "tab_memorylens",
-        "g": "group_patient",
-        "name": "Response",
-        "statusCode": "",
-        "headers": {},
-        "x": 2360,
-        "y": 2460,
-        "wires": []
-    },
-    {
-        "id": "6435880670207383",
-        "type": "catch",
-        "z": "tab_memorylens",
-        "g": "group_patient",
-        "name": "Catch All",
-        "scope": null,
-        "uncaught": false,
-        "x": 460,
-        "y": 2460,
-        "wires": [
-            [
-                "4d3ba830193f2aff"
-            ]
-        ]
-    },
-    {
-        "id": "4d3ba830193f2aff",
-        "type": "function",
-        "z": "tab_memorylens",
-        "g": "group_patient",
-        "name": "Format Error",
-        "func": "msg.payload = { error: msg.error ? msg.error.message : 'Unknown error' };\nmsg.statusCode = 500;\nreturn msg;",
-        "outputs": 1,
-        "x": 660,
-        "y": 2460,
-        "wires": [
-            [
-                "409e97e06f3fb766"
-            ]
-        ]
-    },
-    {
-        "id": "3397b98f71e3f23d",
-        "type": "function",
-        "z": "tab_memorylens",
-        "g": "group_patient",
-        "name": "ValidateScore (>=0.5 → Uniface)",
-        "func": "const TH = flow.get('face_threshold') ?? 0.5;\nconst p = msg.payload || {};\nconst score = Number(p.score);\n\nif (Number.isNaN(score)) {\n    msg.error = { code: 'NO_SCORE', message: 'Missing/invalid score' };\n    msg.status = 400;\n    return [null, msg];\n}\n\nmsg.metrics = {\n    first_model_score: score,\n    threshold: TH\n};\n\nif (score >= TH) {\n    msg.route = 'to_uniface';\n    return [msg, null];\n}\n\nmsg.route = 'skip_uniface';\nmsg.result = {\n    recognized: false,\n    reason: 'score_below_threshold',\n    score\n};\nmsg.status = 200;\nreturn [null, msg];\n",
-        "outputs": 2,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 920,
-        "y": 2340,
-        "wires": [
-            [
-                "a04663147d0cbee6"
-            ],
-            [
-                "10ccce6e8dd73bfa"
-            ]
-        ]
-    },
-    {
-        "id": "a04663147d0cbee6",
-        "type": "function",
-        "z": "tab_memorylens",
-        "g": "group_patient",
-        "name": "StartTimer Uniface",
-        "func": "msg._t0 = Date.now();\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1190,
-        "y": 2320,
-        "wires": [
-            [
-                "f687d0983cba6dcf"
-            ]
-        ]
-    },
-    {
-        "id": "f687d0983cba6dcf",
-        "type": "function",
-        "z": "tab_memorylens",
-        "g": "group_patient",
-        "name": "Format Request → JSON",
-        "func": "// Recuperar imagen original guardada\nif (msg.original_image_data) {\n    msg.payload = {\n        \"image\": {\n            \"value\": msg.original_image_data.buffer,\n            \"options\": {\n                \"filename\": msg.original_image_data.filename,\n                \"contentType\": msg.original_image_data.mimetype\n            }\n        }\n    };\n    // Limpiar headers anteriores y forzar multipart\n    msg.headers = {};\n    msg.headers['content-type'] = 'multipart/form-data';\n} else {\n   // Fallback si no hay imagen (error?)\n   msg.payload = {};\n}\n\n// No necesitamos Authorization por ahora si es local\n// const token = flow.get('uniface_token');\n// msg.headers['Authorization'] = ...\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1410,
-        "y": 2320,
-        "wires": [
-            [
-                "fb17f343de85686e"
-            ]
-        ]
-    },
-    {
-        "id": "fb17f343de85686e",
-        "type": "http request",
-        "z": "tab_memorylens",
-        "g": "group_patient",
-        "name": "POST /recognize (Flask-Uniface)",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "http://localhost:5000/recognize",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 1700,
-        "y": 2320,
-        "wires": [
-            [
-                "a5cf70cef51860af"
-            ]
-        ]
-    },
-    {
-        "id": "a5cf70cef51860af",
-        "type": "function",
-        "z": "tab_memorylens",
-        "g": "group_patient",
-        "name": "Format Response",
-        "func": "// Normaliza la respuesta del microservicio\nconst t = msg._t0 || Date.now();\nconst latency = Date.now() - t;\nconst resp = msg.payload || {};\nconst pf = resp.primary_face || {};\nlet embeddingBase64 = null;\nif (resp.embedding && Array.isArray(resp.embedding)) {\n    const floatArray = new Float32Array(resp.embedding);\n    const buffer = Buffer.from(floatArray.buffer);\n    embeddingBase64 = buffer.toString('base64');\n}\n\n// 2. Configurar llamada REST\nif (embeddingBase64) {\n    msg.payload = {\n        embeddingBase64: embeddingBase64,\n        minSim: 0.4,\n        top: 5\n    };\n    \n    // Headers\n    msg.headers = {};\n    msg.headers['Content-Type'] = 'application/json';\n    if (msg.session_id) {\n        msg.headers['X-Session-Id'] = msg.session_id;\n    }\n    \n    // URL endpoint Java\n    msg.url = `http://localhost:8080/garAItu/group/${msg.group_id}/recognize`;\n    \n    msg.metrics = msg.metrics || {};\n    msg.metrics.uniface_latency_ms = latency;\n    msg.local_result = { recognized: !!resp.recognized, primary_face: pf };\n\n    // SALIDA 1: Al REST\n    return [msg, null];\n} else {\n    // Si no hubo cara, no llamamos al REST. Respondemos directo.\n    msg.payload = { recognized: false, reason: \"No embedding generated\" };\n    \n    msg.metrics = msg.metrics || {};\n    msg.metrics.uniface_latency_ms = latency;\n    msg.local_result = { recognized: false, primary_face: pf };\n    \n    // SALIDA 2: Directo a Response\n    return [null, msg];\n}",
-        "outputs": 2,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1950,
-        "y": 2320,
-        "wires": [
-            [
-                "d24b89ca2afc589e",
-                "803f6390ec23ad86"
-            ],
-            [
-                "409e97e06f3fb766"
-            ]
-        ]
-    },
-    {
-        "id": "d24b89ca2afc589e",
-        "type": "http request",
-        "z": "tab_memorylens",
-        "g": "group_patient",
-        "name": "POST (Java REST)",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 2210,
-        "y": 2320,
-        "wires": [
-            [
-                "82a7e8cae3d16c8d",
-                "409e97e06f3fb766"
-            ]
-        ]
-    },
-    {
-        "id": "82a7e8cae3d16c8d",
-        "type": "debug",
-        "z": "tab_memorylens",
-        "g": "group_patient",
-        "name": "REST Response",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "x": 2430,
-        "y": 2320,
-        "wires": []
-    },
-    {
-        "id": "10ccce6e8dd73bfa",
-        "type": "debug",
-        "z": "tab_memorylens",
-        "g": "group_patient",
-        "name": "Skip Uniface (score<0.5)",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "x": 1210,
-        "y": 2400,
-        "wires": []
-    },
-    {
-        "id": "803f6390ec23ad86",
-        "type": "debug",
-        "z": "tab_memorylens",
-        "g": "group_patient",
-        "name": "Final Result",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "x": 2150,
-        "y": 2220,
-        "wires": []
-    },
-    {
-        "id": "7e8bc1698f96f787",
-        "type": "debug",
-        "z": "tab_memorylens",
-        "g": "group_patient",
-        "name": "debug 46",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "group_id",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 660,
-        "y": 2240,
-        "wires": []
-    },
-    {
-        "id": "7d56586659032347",
-        "type": "http in",
-        "z": "tab_memorylens",
-        "g": "group_family",
+        "z": "f401fdcbbfac5f65",
+        "g": "7b3c34c1b7d953f3",
         "name": "POST /api/upload",
         "url": "/api/upload",
         "method": "post",
@@ -1069,16 +774,16 @@
         "y": 1760,
         "wires": [
             [
-                "888606d16ee8f326",
-                "ebe9998c11fd8144"
+                "96d79a4be615369d",
+                "ada509faf70be413"
             ]
         ]
     },
     {
-        "id": "888606d16ee8f326",
+        "id": "96d79a4be615369d",
         "type": "function",
-        "z": "tab_memorylens",
-        "g": "group_family",
+        "z": "f401fdcbbfac5f65",
+        "g": "7b3c34c1b7d953f3",
         "name": "Prepare Upload Params",
         "func": "if (msg.req.files && msg.req.files.length > 0) {\n    const file = msg.req.files[0];\n\n    msg.member_id = msg.req.body?.id || null;\n    msg.session_id = msg.req.headers['x-session-id'];\n\n    if (!msg.member_id) {\n        msg.payload = { error: \"Missing member 'id' in multipart body\" };\n        msg.statusCode = 400;\n        msg._responded = true;\n        return [null, msg];\n    }\n\n    if (!msg.session_id) {\n        msg.payload = { error: \"Missing 'X-Session-Id' header\" };\n        msg.statusCode = 400;\n        msg._responded = true;\n        return [null, msg];\n    }\n\n    msg.original_image_data = {\n        buffer: file.buffer,\n        filename: file.originalname,\n        mimetype: file.mimetype\n    };\n\n    msg.payload = {\n        image: {\n            value: file.buffer,\n            options: {\n                filename: file.originalname,\n                contentType: file.mimetype\n            }\n        }\n    };\n\n    msg.headers = { 'content-type': 'multipart/form-data' };\n    return [msg, null];\n}\n\nmsg.payload = { error: \"No file uploaded\" };\nmsg.statusCode = 400;\nmsg._responded = true;\nreturn [null, msg];",
         "outputs": 2,
@@ -1086,18 +791,18 @@
         "y": 1760,
         "wires": [
             [
-                "ef5397602b5bbfb6"
+                "7905ab3b7e421c6a"
             ],
             [
-                "b46f0fb33a0e61ee"
+                "4c61489e22353575"
             ]
         ]
     },
     {
-        "id": "ef5397602b5bbfb6",
+        "id": "7905ab3b7e421c6a",
         "type": "http request",
-        "z": "tab_memorylens",
-        "g": "group_family",
+        "z": "f401fdcbbfac5f65",
+        "g": "7b3c34c1b7d953f3",
         "name": "Request Flask Detect",
         "method": "POST",
         "ret": "obj",
@@ -1107,16 +812,16 @@
         "y": 1720,
         "wires": [
             [
-                "36ce27764b41c634",
-                "354f5033ece5bb9f"
+                "07011b46bcab4760",
+                "5abf9dc108d4ff51"
             ]
         ]
     },
     {
-        "id": "36ce27764b41c634",
+        "id": "07011b46bcab4760",
         "type": "function",
-        "z": "tab_memorylens",
-        "g": "group_family",
+        "z": "f401fdcbbfac5f65",
+        "g": "7b3c34c1b7d953f3",
         "name": "Validate & Route",
         "func": "const TH = 0.5;\nconst score = Number(msg.payload?.score);\n\nif (Number.isNaN(score) || score < TH) {\n    msg.payload = { error: 'No valid face detected (score < 0.5)' };\n    msg.statusCode = 400;\n    msg._responded = true;\n    return [null, msg];\n}\n\nreturn [msg, null];",
         "outputs": 2,
@@ -1124,18 +829,18 @@
         "y": 1720,
         "wires": [
             [
-                "96716cbd48d24088"
+                "4bfe84ba3114530a"
             ],
             [
-                "b46f0fb33a0e61ee"
+                "4c61489e22353575"
             ]
         ]
     },
     {
-        "id": "96716cbd48d24088",
+        "id": "4bfe84ba3114530a",
         "type": "function",
-        "z": "tab_memorylens",
-        "g": "group_family",
+        "z": "f401fdcbbfac5f65",
+        "g": "7b3c34c1b7d953f3",
         "name": "Restore Image",
         "func": "if (msg.original_image_data) {\n    msg.payload = {\n        image: {\n            value: msg.original_image_data.buffer,\n            options: {\n                filename: msg.original_image_data.filename,\n                contentType: msg.original_image_data.mimetype\n            }\n        }\n    };\n    msg.headers = { 'content-type': 'multipart/form-data' };\n}\nreturn msg;",
         "outputs": 1,
@@ -1143,15 +848,15 @@
         "y": 1660,
         "wires": [
             [
-                "be721deac428e7e5"
+                "eac855d529450032"
             ]
         ]
     },
     {
-        "id": "be721deac428e7e5",
+        "id": "eac855d529450032",
         "type": "http request",
-        "z": "tab_memorylens",
-        "g": "group_family",
+        "z": "f401fdcbbfac5f65",
+        "g": "7b3c34c1b7d953f3",
         "name": "Flask Uniface",
         "method": "POST",
         "ret": "obj",
@@ -1161,16 +866,16 @@
         "y": 1660,
         "wires": [
             [
-                "274d546d69754083",
-                "25c80bd72bfb4194"
+                "9f050bf92daa2afe",
+                "c02a4744217d998e"
             ]
         ]
     },
     {
-        "id": "274d546d69754083",
+        "id": "9f050bf92daa2afe",
         "type": "function",
-        "z": "tab_memorylens",
-        "g": "group_family",
+        "z": "f401fdcbbfac5f65",
+        "g": "7b3c34c1b7d953f3",
         "name": "Prep Save REST",
         "func": "const resp = msg.payload || {};\n\nif (resp.recognized === false) {\n    msg.payload = { error: 'No face generated by Uniface' };\n    msg.statusCode = 400;\n    msg._responded = true;\n    return [null, msg];\n}\n\nif (!Array.isArray(resp.embedding)) {\n    msg.payload = { error: 'No embedding generated' };\n    msg.statusCode = 500;\n    msg._responded = true;\n    return [null, msg];\n}\n\nconst floatArray = new Float32Array(resp.embedding);\nconst buffer = Buffer.from(floatArray.buffer);\n\nmsg.url = `http://localhost:8080/garAItu/member/${msg.member_id}/embedding`;\nmsg.headers = {\n    'Content-Type': 'application/json',\n    'X-Session-Id': msg.session_id\n};\n\nmsg.payload = { embeddingBase64: buffer.toString('base64') };\nreturn [msg, null];",
         "outputs": 2,
@@ -1183,18 +888,18 @@
         "y": 1660,
         "wires": [
             [
-                "7a78a1c7e82e3a17"
+                "f21904be2f223a8d"
             ],
             [
-                "b46f0fb33a0e61ee"
+                "4c61489e22353575"
             ]
         ]
     },
     {
-        "id": "7a78a1c7e82e3a17",
+        "id": "f21904be2f223a8d",
         "type": "http request",
-        "z": "tab_memorylens",
-        "g": "group_family",
+        "z": "f401fdcbbfac5f65",
+        "g": "7b3c34c1b7d953f3",
         "name": "PUT Java Save",
         "method": "PUT",
         "ret": "obj",
@@ -1211,16 +916,16 @@
         "y": 1660,
         "wires": [
             [
-                "a40438572d71538f",
-                "365a127452fd6123"
+                "3c5a34744f6ed993",
+                "3e2793ad212426b1"
             ]
         ]
     },
     {
-        "id": "b46f0fb33a0e61ee",
+        "id": "4c61489e22353575",
         "type": "function",
-        "z": "tab_memorylens",
-        "g": "group_family",
+        "z": "f401fdcbbfac5f65",
+        "g": "7b3c34c1b7d953f3",
         "name": "Format Upload Error",
         "func": "if (msg._responded) return null;\n\nmsg.payload = { error: msg.payload?.error || msg.error || 'Unknown error' };\nmsg.statusCode = msg.statusCode || 400;\nmsg._responded = true;\nreturn msg;",
         "outputs": 1,
@@ -1228,56 +933,39 @@
         "y": 1860,
         "wires": [
             [
-                "a40438572d71538f"
+                "3c5a34744f6ed993"
             ]
         ]
     },
     {
-        "id": "a40438572d71538f",
+        "id": "3c5a34744f6ed993",
         "type": "http response",
-        "z": "tab_memorylens",
-        "g": "group_family",
+        "z": "f401fdcbbfac5f65",
+        "g": "7b3c34c1b7d953f3",
         "name": "Upload Response",
         "x": 2250,
         "y": 1860,
         "wires": []
     },
     {
-        "id": "aa8faa764058dfca",
+        "id": "ecf61e5dc7012798",
         "type": "catch",
-        "z": "tab_memorylens",
-        "g": "group_family",
+        "z": "f401fdcbbfac5f65",
+        "g": "7b3c34c1b7d953f3",
         "name": "Catch Errors",
         "x": 860,
         "y": 1860,
         "wires": [
             [
-                "b46f0fb33a0e61ee"
+                "4c61489e22353575"
             ]
         ]
     },
     {
-        "id": "ad2323cb7b3377e7",
+        "id": "576526786f7ab1a9",
         "type": "debug",
-        "z": "tab_memorylens",
-        "g": "group_patient",
-        "name": "debug 47",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 900,
-        "y": 2260,
-        "wires": []
-    },
-    {
-        "id": "2b98a975dfae9267",
-        "type": "debug",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "debug 49",
         "active": true,
         "tosidebar": true,
@@ -1291,10 +979,10 @@
         "wires": []
     },
     {
-        "id": "11edbe19af22a272",
+        "id": "074c47ebb78f66cf",
         "type": "debug",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "debug 54",
         "active": true,
         "tosidebar": true,
@@ -1308,10 +996,10 @@
         "wires": []
     },
     {
-        "id": "354f5033ece5bb9f",
+        "id": "5abf9dc108d4ff51",
         "type": "debug",
-        "z": "tab_memorylens",
-        "g": "group_family",
+        "z": "f401fdcbbfac5f65",
+        "g": "7b3c34c1b7d953f3",
         "name": "debug 55",
         "active": true,
         "tosidebar": true,
@@ -1325,10 +1013,10 @@
         "wires": []
     },
     {
-        "id": "25c80bd72bfb4194",
+        "id": "c02a4744217d998e",
         "type": "debug",
-        "z": "tab_memorylens",
-        "g": "group_family",
+        "z": "f401fdcbbfac5f65",
+        "g": "7b3c34c1b7d953f3",
         "name": "debug 56",
         "active": true,
         "tosidebar": true,
@@ -1342,10 +1030,10 @@
         "wires": []
     },
     {
-        "id": "365a127452fd6123",
+        "id": "3e2793ad212426b1",
         "type": "debug",
-        "z": "tab_memorylens",
-        "g": "group_family",
+        "z": "f401fdcbbfac5f65",
+        "g": "7b3c34c1b7d953f3",
         "name": "debug 57",
         "active": true,
         "tosidebar": true,
@@ -1359,10 +1047,10 @@
         "wires": []
     },
     {
-        "id": "ebe9998c11fd8144",
+        "id": "ada509faf70be413",
         "type": "debug",
-        "z": "tab_memorylens",
-        "g": "group_family",
+        "z": "f401fdcbbfac5f65",
+        "g": "7b3c34c1b7d953f3",
         "name": "debug 58",
         "active": true,
         "tosidebar": true,
@@ -1376,10 +1064,10 @@
         "wires": []
     },
     {
-        "id": "5c610b56d8421c05",
+        "id": "bdc58ca06ba8b61b",
         "type": "debug",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "debug 59",
         "active": true,
         "tosidebar": true,
@@ -1393,10 +1081,10 @@
         "wires": []
     },
     {
-        "id": "75477e3c418bc46d",
+        "id": "3b01dac305ecbba4",
         "type": "debug",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "debug 60",
         "active": true,
         "tosidebar": true,
@@ -1410,10 +1098,10 @@
         "wires": []
     },
     {
-        "id": "get_members_in",
+        "id": "49408806708bdedf",
         "type": "http in",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "GET /api/group/:id/member",
         "url": "/api/group/:id/member",
         "method": "get",
@@ -1423,15 +1111,15 @@
         "y": 1160,
         "wires": [
             [
-                "get_members_func"
+                "f414681fd063e2c1"
             ]
         ]
     },
     {
-        "id": "get_members_func",
+        "id": "f414681fd063e2c1",
         "type": "function",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "Prepare GET Request",
         "func": "msg.url = \"http://localhost:8080/garAItu/group/\" + msg.req.params.id + \"/member\";\nmsg.headers = {\n    \"X-Session-Id\": msg.req.headers[\"x-session-id\"],\n    \"Content-Type\": \"application/json\"\n};\nreturn msg;",
         "outputs": 1,
@@ -1444,15 +1132,15 @@
         "y": 1160,
         "wires": [
             [
-                "get_members_req"
+                "fbc1986c9cbfcde7"
             ]
         ]
     },
     {
-        "id": "get_members_req",
+        "id": "fbc1986c9cbfcde7",
         "type": "http request",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "Spring Boot GET",
         "method": "GET",
         "ret": "obj",
@@ -1469,16 +1157,16 @@
         "y": 1160,
         "wires": [
             [
-                "get_members_resp",
-                "admin_debug"
+                "f525322396f4b782",
+                "8f1bf987de176347"
             ]
         ]
     },
     {
-        "id": "get_members_resp",
+        "id": "f525322396f4b782",
         "type": "http response",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "Response",
         "statusCode": "",
         "headers": {},
@@ -1487,10 +1175,10 @@
         "wires": []
     },
     {
-        "id": "del_member_in",
+        "id": "dcb68171d9907ea1",
         "type": "http in",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "DELETE /garAItu/...",
         "url": "/garAItu/group/:groupId/member/:memberId",
         "method": "delete",
@@ -1501,15 +1189,15 @@
         "y": 1260,
         "wires": [
             [
-                "del_member_func"
+                "d211f2d2d7f0d567"
             ]
         ]
     },
     {
-        "id": "del_member_func",
+        "id": "d211f2d2d7f0d567",
         "type": "function",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "Prepare DELETE Request",
         "func": "msg.url = \"http://localhost:8080/garAItu/group/\" + msg.req.params.groupId + \"/member/\" + msg.req.params.memberId;\nmsg.headers = {\n    \"X-Session-Id\": msg.req.headers[\"x-session-id\"],\n    \"Content-Type\": \"application/json\"\n};\nreturn msg;",
         "outputs": 1,
@@ -1522,15 +1210,15 @@
         "y": 1260,
         "wires": [
             [
-                "del_member_req"
+                "cfca68df60fd3708"
             ]
         ]
     },
     {
-        "id": "del_member_req",
+        "id": "cfca68df60fd3708",
         "type": "http request",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "Spring Boot DELETE",
         "method": "DELETE",
         "ret": "obj",
@@ -1547,16 +1235,16 @@
         "y": 1260,
         "wires": [
             [
-                "get_members_resp",
-                "admin_debug"
+                "f525322396f4b782",
+                "8f1bf987de176347"
             ]
         ]
     },
     {
-        "id": "admin_debug",
+        "id": "8f1bf987de176347",
         "type": "debug",
-        "z": "tab_memorylens",
-        "g": "group_auth",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
         "name": "Admin Debug",
         "active": true,
         "tosidebar": true,
@@ -1571,10 +1259,10 @@
         "wires": []
     },
     {
-        "id": "07cb06ee29d69e4f",
+        "id": "1f3422d7508e1629",
         "type": "debug",
-        "z": "tab_memorylens",
-        "g": "group_family",
+        "z": "f401fdcbbfac5f65",
+        "g": "7b3c34c1b7d953f3",
         "name": "debug 61",
         "active": true,
         "tosidebar": true,
@@ -1588,10 +1276,10 @@
         "wires": []
     },
     {
-        "id": "98c4b40996f6ec07",
+        "id": "8811d1d6c86cac83",
         "type": "debug",
-        "z": "tab_memorylens",
-        "g": "group_family",
+        "z": "f401fdcbbfac5f65",
+        "g": "7b3c34c1b7d953f3",
         "name": "debug 62",
         "active": true,
         "tosidebar": true,
@@ -1606,10 +1294,10 @@
         "wires": []
     },
     {
-        "id": "82e84d50aab664f8",
+        "id": "7446c78818744fb6",
         "type": "http in",
-        "z": "tab_memorylens",
-        "g": "group_family",
+        "z": "f401fdcbbfac5f65",
+        "g": "7b3c34c1b7d953f3",
         "name": "PUT /garAItu/member/:id",
         "url": "/garAItu/member/:id",
         "method": "put",
@@ -1620,16 +1308,16 @@
         "y": 2060,
         "wires": [
             [
-                "f0c142852c82c445",
-                "98c4b40996f6ec07"
+                "c3a5947ef93ed9ec",
+                "8811d1d6c86cac83"
             ]
         ]
     },
     {
-        "id": "f0c142852c82c445",
+        "id": "c3a5947ef93ed9ec",
         "type": "function",
-        "z": "tab_memorylens",
-        "g": "group_family",
+        "z": "f401fdcbbfac5f65",
+        "g": "7b3c34c1b7d953f3",
         "name": "Prepare PUT Request",
         "func": "msg.url = \"http://localhost:8080/garAItu/member/\" + msg.req.params.id;\nmsg.headers = {\n    \"X-Session-Id\": msg.req.headers[\"x-session-id\"],\n    \"Content-Type\": \"application/json\"\n};\nreturn msg;",
         "outputs": 1,
@@ -1642,15 +1330,15 @@
         "y": 2060,
         "wires": [
             [
-                "e6ffa1c963337b5c"
+                "fbb5a3f799ce9c34"
             ]
         ]
     },
     {
-        "id": "e6ffa1c963337b5c",
+        "id": "fbb5a3f799ce9c34",
         "type": "http request",
-        "z": "tab_memorylens",
-        "g": "group_family",
+        "z": "f401fdcbbfac5f65",
+        "g": "7b3c34c1b7d953f3",
         "name": "Spring Boot PUT",
         "method": "PUT",
         "ret": "obj",
@@ -1667,16 +1355,16 @@
         "y": 2060,
         "wires": [
             [
-                "133b98b41205ba3f",
-                "07cb06ee29d69e4f"
+                "0f4b219282a2492b",
+                "1f3422d7508e1629"
             ]
         ]
     },
     {
-        "id": "133b98b41205ba3f",
+        "id": "0f4b219282a2492b",
         "type": "http response",
-        "z": "tab_memorylens",
-        "g": "group_family",
+        "z": "f401fdcbbfac5f65",
+        "g": "7b3c34c1b7d953f3",
         "name": "Response",
         "statusCode": "",
         "headers": {},
@@ -1685,22 +1373,691 @@
         "wires": []
     },
     {
-        "id": "schema_validator_node",
-        "type": "function",
-        "z": "tab_memorylens",
-        "g": "group_patient",
-        "name": "Schema Validator",
-        "func": "const payload = msg.payload;\nlet valid = true;\nlet error = \"\";\n\nif (typeof payload !== 'object' || payload === null) {\n    valid = false;\n    error = \"Payload is not an object\";\n} else {\n    if (!(\"detected\" in payload)) {\n        valid = false;\n        error = \"Missing required property: detected\";\n    }\n    if (payload.score && typeof payload.score !== 'number') {\n        valid = false;\n        error = \"Invalid type for score: expected number\";\n    }\n    if (payload.bbox && !Array.isArray(payload.bbox)) {\n        valid = false;\n        error = \"Invalid type for bbox: expected array\";\n    }\n}\n\nif (!valid) {\n    msg.error = { message: \"Schema Validation Failed: \" + error, payload: msg.payload };\n    return [null, msg];\n}\n\nreturn [msg, null];",
-        "outputs": 2,
-        "x": 800,
-        "y": 2340,
+        "id": "72ec20b38702b276",
+        "type": "http in",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
+        "name": "POST /api/recognize",
+        "url": "/api/recognize",
+        "method": "post",
+        "upload": true,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 100,
+        "y": 2280,
         "wires": [
             [
-                "3397b98f71e3f23d"
-            ],
-            [
-                "4d3ba830193f2aff"
+                "4508ed4c30f86561",
+                "9a06b60a602e8cc7"
             ]
         ]
+    },
+    {
+        "id": "4508ed4c30f86561",
+        "type": "function",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
+        "name": "Prepare Multipart",
+        "func": "if (msg.req.files && msg.req.files.length > 0) {\n    var file = msg.req.files[0];\n    \n    msg.group_id = (msg.req.body && msg.req.body.groupId) ? msg.req.body.groupId : \"default\";\n    msg.session_id = msg.req.headers['x-session-id'];\n    \n    msg.original_image_data = {\n        buffer: file.buffer,\n        filename: file.originalname,\n        mimetype: file.mimetype\n    };\n    \n    msg.payload = {\n        \"image\": {\n            \"value\": file.buffer,\n            \"options\": {\n                \"filename\": file.originalname,\n                \"contentType\": file.mimetype\n            }\n        }\n    };\n    msg.headers = {};\n    msg.headers['content-type'] = 'multipart/form-data';\n} else {\n    msg.payload = {};\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 2280,
+        "wires": [
+            [
+                "0247972094e760f2"
+            ]
+        ]
+    },
+    {
+        "id": "0247972094e760f2",
+        "type": "http request",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
+        "name": "Request Flask (Detect)",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://localhost:5000/detect",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 570,
+        "y": 2280,
+        "wires": [
+            [
+                "956415bcc92517d0",
+                "c0f32c96174cb713"
+            ]
+        ]
+    },
+    {
+        "id": "49590515d651c23a",
+        "type": "http response",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
+        "name": "Final Response (JSON/WAV)",
+        "statusCode": "",
+        "headers": {},
+        "x": 1100,
+        "y": 2500,
+        "wires": []
+    },
+    {
+        "id": "357fb1873c129e69",
+        "type": "catch",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
+        "name": "Catch All",
+        "scope": null,
+        "uncaught": false,
+        "x": 330,
+        "y": 2460,
+        "wires": [
+            [
+                "e8e981f2ca5c4abe"
+            ]
+        ]
+    },
+    {
+        "id": "e8e981f2ca5c4abe",
+        "type": "function",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
+        "name": "Format Error",
+        "func": "msg.payload = { error: msg.error ? msg.error.message : 'Unknown error' };\nmsg.statusCode = 500;\nreturn msg;",
+        "outputs": 1,
+        "x": 550,
+        "y": 2460,
+        "wires": [
+            [
+                "49590515d651c23a"
+            ]
+        ]
+    },
+    {
+        "id": "956415bcc92517d0",
+        "type": "function",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
+        "name": "ValidateScore",
+        "func": "const TH = flow.get('face_threshold') ?? 0.5;\nconst p = msg.payload || {};\nconst score = Number(p.score);\n\nif (Number.isNaN(score)) {\n    msg.error = { code: 'NO_SCORE', message: 'Missing/invalid score' };\n    msg.status = 400;\n    return [null, msg];\n}\n\nmsg.metrics = {\n    first_model_score: score,\n    threshold: TH\n};\n\nif (score >= TH) {\n    msg.route = 'to_uniface';\n    return [msg, null];\n}\n\nmsg.route = 'skip_uniface';\nmsg.result = {\n    recognized: false,\n    reason: 'score_below_threshold',\n    score\n};\nmsg.status = 200;\nreturn [null, msg];\n",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 2280,
+        "wires": [
+            [
+                "be18b00db4886fdc"
+            ],
+            [
+                "49590515d651c23a"
+            ]
+        ]
+    },
+    {
+        "id": "d668408af403cc29",
+        "type": "function",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
+        "name": "Prepare Uniface Request",
+        "func": "// Recuperar imagen original guardada\nif (msg.original_image_data) {\n    msg.payload = {\n        \"image\": {\n            \"value\": msg.original_image_data.buffer,\n            \"options\": {\n                \"filename\": msg.original_image_data.filename,\n                \"contentType\": msg.original_image_data.mimetype\n            }\n        }\n    };\n    // Limpiar headers anteriores y forzar multipart\n    msg.headers = {};\n    msg.headers['content-type'] = 'multipart/form-data';\n} else {\n   // Fallback si no hay imagen (error?)\n   msg.payload = {};\n}\n\n// No necesitamos Authorization por ahora si es local\n// const token = flow.get('uniface_token');\n// msg.headers['Authorization'] = ...\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 2220,
+        "wires": [
+            [
+                "c9269ff01df1ff4a"
+            ]
+        ]
+    },
+    {
+        "id": "c9269ff01df1ff4a",
+        "type": "http request",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
+        "name": "POST /recognize (Uniface)",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://localhost:5000/recognize",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1270,
+        "y": 2300,
+        "wires": [
+            [
+                "c4680890b86d499e",
+                "5fcb57ee3bc62f8c"
+            ]
+        ]
+    },
+    {
+        "id": "c4680890b86d499e",
+        "type": "function",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
+        "name": "Format Embedding Request",
+        "func": "// Normaliza la respuesta del microservicio\nconst t = msg._t0 || Date.now();\nconst latency = Date.now() - t;\nconst resp = msg.payload || {};\nconst pf = resp.primary_face || {};\nlet embeddingBase64 = null;\nif (resp.embedding && Array.isArray(resp.embedding)) {\n    const floatArray = new Float32Array(resp.embedding);\n    const buffer = Buffer.from(floatArray.buffer);\n    embeddingBase64 = buffer.toString('base64');\n}\n\n// 2. Configurar llamada REST\nif (embeddingBase64) {\n    msg.payload = {\n        embeddingBase64: embeddingBase64,\n        minSim: 0.4,\n        top: 5\n    };\n    \n    // Headers\n    msg.headers = {};\n    msg.headers['Content-Type'] = 'application/json';\n    if (msg.session_id) {\n        msg.headers['X-Session-Id'] = msg.session_id;\n    }\n    \n    // URL endpoint Java\n    msg.url = `http://localhost:8080/garAItu/group/${msg.group_id}/recognize`;\n    \n    msg.metrics = msg.metrics || {};\n    msg.metrics.uniface_latency_ms = latency;\n    msg.local_result = { recognized: !!resp.recognized, primary_face: pf };\n\n    // SALIDA 1: Al REST\n    return [msg, null];\n} else {\n    // Si no hubo cara, no llamamos al REST. Respondemos directo.\n    msg.payload = { recognized: false, reason: \"No embedding generated\" };\n    \n    msg.metrics = msg.metrics || {};\n    msg.metrics.uniface_latency_ms = latency;\n    msg.local_result = { recognized: false, primary_face: pf };\n    \n    // SALIDA 2: Directo a Response\n    return [null, msg];\n}",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1540,
+        "y": 2260,
+        "wires": [
+            [
+                "9871db02f2977772",
+                "f7ad0676505f4fd9"
+            ],
+            [
+                "49590515d651c23a"
+            ]
+        ]
+    },
+    {
+        "id": "9871db02f2977772",
+        "type": "http request",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
+        "name": "POST (Java REST)",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1830,
+        "y": 2240,
+        "wires": [
+            [
+                "0fca49dd62c8a062",
+                "f6ab3ee87f64c43c"
+            ]
+        ]
+    },
+    {
+        "id": "0fca49dd62c8a062",
+        "type": "function",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
+        "name": "Pick Name & Compose TTS",
+        "func": "// 1. Obtenemos la respuesta del servidor Java\nconst results = msg.payload;\n// 2. Verificamos si hay resultados\nconst isArray = Array.isArray(results);\nconst hasResults = isArray && results.length > 0;\nif (!hasResults) {\n    msg.statusCode = 200;\n    msg.payload = { \n        recognized: false, \n        reason: isArray ? \"person_not_found\" : \"error_java_response\" \n    };\n    return [null, msg]; \n}\n// 3. CASO: RECONOCIDO\nconst bestMatch = results[0];\n// 4. Usamos el string del contexto directamente de la Base de Datos\nconst contextFromDB = bestMatch.context || \"a person you know\";\nmsg.memberId = bestMatch.memberId;\nmsg.recognizedName = bestMatch.name || \"Known person\";\nmsg.personContext = contextFromDB; \nmsg.similarity = Math.round(bestMatch.similarity * 100) / 100;\n// 5. CONSTRUIMOS EL MENSAJE TTS\n// Dirá algo como: \"This person is Josu and this is his context: He is your son who lives in Madrid\"\nmsg.ttsText = `${msg.recognizedName} ${contextFromDB}.`;\n// 6. Enviamos al siguiente nodo (Piper)\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2080,
+        "y": 2240,
+        "wires": [
+            [
+                "e0e470e2e46ac126",
+                "31046d4e18a70d4f"
+            ],
+            [
+                "49590515d651c23a"
+            ]
+        ]
+    },
+    {
+        "id": "e0e470e2e46ac126",
+        "type": "function",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
+        "name": "Build Piper Request",
+        "func": "// Guardamos los datos para que no se pierdan cuando Piper responda\nmsg.captureData = {\n    name: msg.recognizedName,\n    similarity: msg.similarity,\n    context: msg.personContext // Asegúrate de haberlo guardado antes\n};\n// Preparamos la llamada a Piper\nmsg.method = \"POST\";\nmsg.url = \"http://localhost:8000/tts\";\nmsg.headers = { \"Content-Type\": \"application/json\" };\nmsg.payload = { text: msg.ttsText };\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2360,
+        "y": 2240,
+        "wires": [
+            [
+                "b447439b37a45d2b"
+            ]
+        ]
+    },
+    {
+        "id": "b447439b37a45d2b",
+        "type": "http request",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
+        "name": "Call Piper (WAV)",
+        "method": "use",
+        "ret": "bin",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": true,
+        "headers": [],
+        "x": 2250,
+        "y": 2440,
+        "wires": [
+            [
+                "76dba37b75424dcd",
+                "fbc6155e3d53c2ee"
+            ]
+        ]
+    },
+    {
+        "id": "76dba37b75424dcd",
+        "type": "function",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
+        "name": "Set Headers",
+        "func": "// 1. El audio que acaba de llegar de Piper es el msg.payload actual (un Buffer)\nconst audioBuffer = msg.payload;\n// 2. Recuperamos los datos que guardamos en el nodo previo a Piper\nconst data = msg.captureData || {};\n// 3. Construimos la respuesta exacta que espera tu código en Codename One\nmsg.payload = {\n    \"recognized\": true,\n    \"audioData\": audioBuffer.toString('base64'), // Audio convertido a texto Base64\n    \"recognizedPerson\": data.name || \"Desconocido\", // Nombre para handleAudioResponse\n    \"name\": data.name,\n    \"similarity\": data.similarity,\n    \"context\": data.context,\n    \"format\": \"wav\",\n    \n    // Estructura \"root\" por si la App falla en el audio y va al bloque de texto\n    \"root\": [\n        {\n            \"name\": data.name,\n            \"similarity\": data.similarity,\n            \"context\": data.context,\n            \"memberId\": data.memberId\n        }\n    ]\n};\n// 4. Forzamos los headers para que el móvil sepa que es un JSON\nmsg.headers = { \n    \"Content-Type\": \"application/json\" \n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1630,
+        "y": 2420,
+        "wires": [
+            [
+                "49590515d651c23a",
+                "a36cba65c7023148"
+            ]
+        ]
+    },
+    {
+        "id": "9a06b60a602e8cc7",
+        "type": "debug",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
+        "name": "debug 15",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 2160,
+        "wires": []
+    },
+    {
+        "id": "c0f32c96174cb713",
+        "type": "debug",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
+        "name": "debug 16",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 2180,
+        "wires": []
+    },
+    {
+        "id": "f7ad0676505f4fd9",
+        "type": "debug",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
+        "name": "debug 17",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1830,
+        "y": 2140,
+        "wires": []
+    },
+    {
+        "id": "5fcb57ee3bc62f8c",
+        "type": "debug",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
+        "name": "debug 18",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1510,
+        "y": 2120,
+        "wires": []
+    },
+    {
+        "id": "fbc6155e3d53c2ee",
+        "type": "debug",
+        "z": "f401fdcbbfac5f65",
+        "name": "debug 19",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2600,
+        "y": 2220,
+        "wires": []
+    },
+    {
+        "id": "be18b00db4886fdc",
+        "type": "function",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
+        "name": "function 2",
+        "func": "\nmsg._t0 = Date.now();\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 2160,
+        "wires": [
+            [
+                "d668408af403cc29"
+            ]
+        ]
+    },
+    {
+        "id": "31046d4e18a70d4f",
+        "type": "debug",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
+        "name": "debug 20",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2620,
+        "y": 2060,
+        "wires": []
+    },
+    {
+        "id": "f6ab3ee87f64c43c",
+        "type": "debug",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
+        "name": "Final Result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2050,
+        "y": 2160,
+        "wires": []
+    },
+    {
+        "id": "a36cba65c7023148",
+        "type": "debug",
+        "z": "f401fdcbbfac5f65",
+        "g": "c0e3434035393a19",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1780,
+        "y": 2380,
+        "wires": []
+    },
+    {
+        "id": "53284f6056882cee",
+        "type": "telegram sender",
+        "z": "f401fdcbbfac5f65",
+        "name": "GaraituBot",
+        "bot": "telegram_bot_config",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1910,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "node_prep_admin_query",
+        "type": "function",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
+        "name": "Prepare Admin Query",
+        "func": "// Este es el código del nodo anterior (Prepare Admin Query)\nmsg.newUser = msg.payload; // Guardamos al usuario que se acaba de unir\nmsg.url = \"http://localhost:8080/garAItu/group/\" + msg.payload.familyGroupId + \"/admin\";\nmsg.method = \"GET\";\nmsg.headers = {\n    \"X-Session-Id\": msg.req.headers[\"x-session-id\"]\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1260,
+        "y": 1000,
+        "wires": [
+            [
+                "node_http_get_admin"
+            ]
+        ]
+    },
+    {
+        "id": "node_http_get_admin",
+        "type": "http request",
+        "z": "f401fdcbbfac5f65",
+        "name": "Get Admin Info",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1460,
+        "y": 940,
+        "wires": [
+            [
+                "node_format_telegram"
+            ]
+        ]
+    },
+    {
+        "id": "node_format_telegram",
+        "type": "function",
+        "z": "f401fdcbbfac5f65",
+        "name": "Format Telegram Msg",
+        "func": "const admin = msg.payload; // Viene del endpoint /admin de Spring Boot\nconst newUser = msg.newUser; // Guardado previamente en el nodo anterior\n// Verificamos que el admin tenga el Chat ID configurado\nif (!admin || !admin.chatId) {\n    node.warn(\"The Admin does not have an ID registered in his account.\");\n    return null; // Detenemos el flujo si no hay a quién enviar\n}\nmsg.payload = {\n    chatId: admin.chatId, // El campo que acabamos de renombrar en Java\n    type: 'message',\n    content: `🔔 *ALERT: New Member Registered*\\n\\n` +\n             `*Group:* Family of ${admin.name}\\n` +\n             `--------------------------\\n` +\n             `*User:* ${newUser.name}\\n` +\n             `*Email:* ${newUser.email}\\n` +\n             `*Role:* ${newUser.role === 1 ? 'Patient' : 'Family Member'}\\n\\n` +\n             `_The user has succesfully joined to your group._`,\n    options: {\n        parse_mode: \"Markdown\" // Para que las negritas y el formato funcionen\n    }\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1700,
+        "y": 940,
+        "wires": [
+            [
+                "53284f6056882cee"
+            ]
+        ]
+    },
+    {
+        "id": "2a3f2842876d115f",
+        "type": "function",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
+        "name": "Validate Schema",
+        "func": "// Outputs: [0]=OK, [1]=ERROR\n\nfunction validate(obj, schema) {\n  const errors = [];\n  const has = (k) => obj && Object.prototype.hasOwnProperty.call(obj, k);\n\n  (schema.required || []).forEach((k) => {\n    if (!has(k) || obj[k] === null || obj[k] === \"\") errors.push(`Missing '${k}'`);\n  });\n\n  if (schema.properties) {\n    for (const [k, rule] of Object.entries(schema.properties)) {\n      if (!has(k)) continue;\n      const v = obj[k];\n\n      if (rule.type === \"string\" && typeof v !== \"string\") errors.push(`'${k}' must be string`);\n      if (rule.minLength && typeof v === \"string\" && v.length < rule.minLength) errors.push(`'${k}' too short`);\n      if (rule.pattern && typeof v === \"string\" && !(new RegExp(rule.pattern).test(v))) {\n        errors.push(`'${k}' invalid format`);\n      }\n    }\n  }\n  return errors;\n}\n\n// 1) Header required\nconst session = msg.req.headers[\"x-session-id\"];\nif (!session) {\n  msg.statusCode = 400;\n  msg.payload = { error: \"Missing 'X-Session-Id' header\" };\n  return [null, msg];\n}\n\n// 2) Body schema: inviteCode\nconst schema = {\n  required: [\"inviteCode\"],\n  properties: {\n    inviteCode: { type: \"string\", minLength: 8, pattern: \"^[A-Fa-f0-9]{8}$\" }\n  }\n};\n\nconst errs = validate(msg.payload, schema);\nif (errs.length) {\n  msg.statusCode = 400;\n  msg.payload = { error: \"Invalid request\", details: errs, received: msg.payload };\n  return [null, msg];\n}\n\n// OK\nreturn [msg, null];\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 1080,
+        "wires": [
+            [
+                "c4cb8b796b61785e"
+            ],
+            [
+                "5fe8614cb3c9b6d1"
+            ]
+        ]
+    },
+    {
+        "id": "606cd181173ad849",
+        "type": "debug",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "663e95d418453edf",
+        "type": "function",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
+        "name": "Login Schema ",
+        "func": "// Outputs: [0]=OK, [1]=ERROR\n\nfunction isEmail(s) {\n  return typeof s === \"string\" && /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(s);\n}\nfunction bad(statusCode, details) {\n  msg.statusCode = statusCode;\n  msg.payload = { error: \"Invalid login request\", details, received: msg.payload };\n  return [null, msg];\n}\n\nconst p = msg.payload || {};\nconst errors = [];\n\n// email\nif (!p.email) errors.push(\"Missing 'email'\");\nelse if (!isEmail(p.email)) errors.push(\"'email' invalid format\");\n\n// password (mínimo 1 char)\nif (p.password === undefined || p.password === null || p.password === \"\") {\n  errors.push(\"Missing 'password'\");\n}\n\nif (errors.length) return bad(400, errors);\n\n// OK\nmsg.payload = p;\nreturn [msg, null];\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 180,
+        "wires": [
+            [
+                "606cd181173ad849",
+                "56d00e3158486966"
+            ],
+            [
+                "b3fab1bd89c4889f"
+            ]
+        ]
+    },
+    {
+        "id": "80f60a536afbb1a3",
+        "type": "function",
+        "z": "f401fdcbbfac5f65",
+        "g": "bdd4339d9545b60f",
+        "name": "Register Schema Validation",
+        "func": "// Outputs: [0]=OK, [1]=ERROR\n\nfunction isEmail(s) {\n  return typeof s === \"string\" && /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(s);\n}\nfunction bad(statusCode, details) {\n  msg.statusCode = statusCode;\n  msg.payload = { error: \"Invalid register request\", details, received: msg.payload };\n  return [null, msg];\n}\n\nconst p = msg.payload || {};\nconst errors = [];\n\n// email\nif (!p.email) errors.push(\"Missing 'email'\");\nelse if (!isEmail(p.email)) errors.push(\"'email' invalid format\");\n\n// password (mínimo 1 char, si quieres mínimo 6 te lo cambio)\nif (p.password === undefined || p.password === null || p.password === \"\") {\n  errors.push(\"Missing 'password'\");\n}\n\n// role: admite number o string numérico\nif (p.role === undefined || p.role === null || p.role === \"\") {\n  errors.push(\"Missing 'role'\");\n} else {\n  const roleNum = typeof p.role === \"number\" ? p.role : parseInt(String(p.role), 10);\n  if (!Number.isInteger(roleNum)) errors.push(\"'role' must be integer\");\n  else if (![1, 2].includes(roleNum)) errors.push(\"'role' must be 1 or 2\");\n  else p.role = roleNum; // normalizamos para Spring Boot\n}\n\n// name (mínimo 1 caracter real)\nif (p.name === undefined || p.name === null) {\n  errors.push(\"Missing 'name'\");\n} else if (typeof p.name !== \"string\") {\n  errors.push(\"'name' must be string\");\n} else if (p.name.trim().length < 1) {\n  errors.push(\"'name' too short\");\n}\n\n// chatId (permitimos \"\" pero si viene que sea string)\nif (p.chatId !== undefined && typeof p.chatId !== \"string\") {\n  errors.push(\"'chatId' must be string\");\n}\n\n// context (opcional, puede ser \"\" si te da igual)\nif (p.context !== undefined && typeof p.context !== \"string\") {\n  errors.push(\"'context' must be string\");\n}\n\nif (errors.length) return bad(400, errors);\n\n// OK\nmsg.payload = p;\nreturn [msg, null];\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 320,
+        "wires": [
+            [
+                "dc3546bc97d5be1c"
+            ],
+            [
+                "e073d07b1cf07e29"
+            ]
+        ]
+    },
+    {
+        "id": "telegram_bot_config",
+        "type": "telegram bot",
+        "botname": "garaitubot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "testenvironment": false,
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "",
+        "socksusername": "",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbothost": "",
+        "localbotport": "",
+        "publicbotport": "",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "4ffab870eefaed43",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-contrib-telegrambot": "17.0.3"
+        }
     }
 ]
